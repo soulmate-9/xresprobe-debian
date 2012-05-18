@@ -26,7 +26,7 @@ if [ -n "$1" ]; then
 else
   DDCPROBE="$(ddcprobe 2>/dev/null)"
 fi
-if [ "$?" == "1" ]; then
+if [ "$?" = "1" ]; then
   exit 1
 fi
 if (echo "$DDCPROBE" | egrep "(edidfail|ddcfail)" >/dev/null 2>&1); then

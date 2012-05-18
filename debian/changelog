@@ -1,3 +1,35 @@
+xresprobe (0.4.23debian1-1) unstable; urgency=low
+
+  * QA upload.
+  * Maintainer field set to QA group.
+  * Otavio and David removed from Uploaders field.
+  * Standards-Version bumped to 3.9.3.
+  * Debhelper compatibility level set to 9.
+  * Drop deprecated simple-patchsys.mk.
+  * Specifically mention /usr/share/common-licenses/GPL-2 in debian/copyright.
+
+ -- Emanuele Rocca <ema@debian.org>  Fri, 18 May 2012 15:48:27 +0000
+
+xresprobe (0.4.23debian1-0.2) unstable; urgency=low
+
+  * Non-maintainer upload to fix RC bug.
+  * Fix typo 'to to' in package description.
+  * Apply patch from Ubuntu:
+    - Fix build problem with recent kernels by defining *_MASK in
+      ddcprobe/lrmi.c (Closes: #608187).  Patch from Chris Coulson.
+
+ -- Petter Reinholdtsen <pere@hungry.com>  Sun, 02 Jan 2011 08:56:48 +0100
+
+xresprobe (0.4.23debian1-0.1) unstable; urgency=low
+
+  * Non-maintainer upload with maintainer approval.
+  * Fix bashism in ddcprobe.sh.  (Closes: #393929)
+  * Add copyright information for ddcprobe. (Closes: #361086)
+  * Updated FSF address to quiet down lintian.
+  * Updated standards version from 3.6.1.0 to 3.7.2.  No change needed.
+
+ -- Petter Reinholdtsen <pere@debian.org>  Thu,  2 Aug 2007 15:08:37 +0200
+
 xresprobe (0.4.23debian1) unstable; urgency=low
 
   * New release based in 0.4.23 release of Ubuntu.

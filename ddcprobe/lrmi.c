@@ -54,6 +54,13 @@ OTHER DEALINGS IN THE SOFTWARE.
 #include "include/lrmi.h"
 #include "x86-common.h"
 
+#if defined(__linux__) && !defined(TF_MASK)
+	#define TF_MASK X86_EFLAGS_TF
+	#define IF_MASK X86_EFLAGS_IF
+	#define VIF_MASK X86_EFLAGS_VIF
+	#define IOPL_MASK X86_EFLAGS_IOPL
+#endif
+
 #if defined(__linux__)
 #define DEFAULT_VM86_FLAGS 	(IF_MASK | IOPL_MASK)
 #elif defined(__NetBSD__) || defined(__FreeBSD__)
