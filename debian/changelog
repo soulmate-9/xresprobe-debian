@@ -1,3 +1,9 @@
+xresprobe (0.4.23debian1-1+soulmate1) stretch; urgency=medium
+
+  * Rebuild for soulmate 9 stretch
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Sun, 10 Sep 2017 01:38:56 +0000
+
 xresprobe (0.4.23debian1-1) unstable; urgency=low
 
   * QA upload.
