@@ -1,0 +1,15 @@
+oem: ATI Radeon Lf
+memory: 0kb
+edid: 1 3
+id: 209c
+eisa: APP209c
+serial: 01010101
+manufacture: 5 2002
+input: digital signal.
+screensize: 32 22
+gamma: 2.200000
+dpms: non-RGB, no active off, suspend, no standby
+timing0: 115510000 1280 256 854 12 16 112 1 3 321x 214
+monitorid: LTN152W3
+monitorid: LTN152W3
+monitorname: Color LCD

@@ -1,0 +1,7 @@
+* r4xx:
+  this is a bit weird -- (WW) RADEON(0): LVDS Info:\nXRes: %d, YRes: %d
+  need contextual egrep and friends -- eep! only occurs on ATI ATOM BIOSes
+  (r4xx) AFAICT
+    -d
+* anything on amd64:
+  need to port our int10 stuff to amd64; currently digging up ASM books.

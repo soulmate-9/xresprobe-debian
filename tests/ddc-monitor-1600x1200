@@ -1,0 +1,64 @@
+vbe: VESA 3.0 detected.
+oem: NVidia
+vendor: NVidia Corporation
+product: Riva TNT Chip Rev B1
+memory: 16384kb
+mode: 640x400x256
+mode: 640x480x256
+mode: 800x600x16
+mode: 800x600x256
+mode: 1024x768x16
+mode: 1024x768x256
+mode: 1280x1024x16
+mode: 1280x1024x256
+mode: 80x60 (text)
+mode: 132x25 (text)
+mode: 132x43 (text)
+mode: 132x50 (text)
+mode: 132x60 (text)
+mode: 320x200x64k
+mode: 320x200x16m
+mode: 640x480x64k
+mode: 640x480x16m
+mode: 800x600x64k
+mode: 800x600x16m
+mode: 1024x768x64k
+mode: 1024x768x16m
+mode: 1280x1024x64k
+edid: 1 2
+id: 04b0
+eisa: SNY04b0
+serial: 005c3bd8
+manufacture: 2 2001
+input: separate sync, composite sync, sync on green, analog signal.
+screensize: 40 30
+gamma: 2.500000
+dpms: RGB, active off, suspend, standby
+timing: 720x400@70 Hz (VGA 640x400, IBM)
+timing: 720x400@88 Hz (XGA2)
+timing: 640x480@60 Hz (VGA)
+timing: 640x480@67 Hz (Mac II, Apple)
+timing: 640x480@72 Hz (VESA)
+timing: 640x480@75 Hz (VESA)
+timing: 800x600@56 Hz (VESA)
+timing: 800x600@60 Hz (VESA)
+timing: 800x600@72 Hz (VESA)
+timing: 800x600@75 Hz (VESA)
+timing: 832x624@75 Hz (Mac II)
+timing: 1024x768@87 Hz Interlaced (8514A)
+timing: 1024x768@60 Hz (VESA)
+timing: 1024x768@70 Hz (VESA)
+timing: 1024x768@75 Hz (VESA)
+timing: 1280x1024@75 (VESA)
+ctiming: 640x480@85
+ctiming: 800x600@85
+ctiming: 1024x768@85
+ctiming: 1152x864@85
+ctiming: 1280x960@75
+ctiming: 1280x1024@85
+ctiming: 1600x1200@85
+ctiming: 2048x1536@60
+timing0: 157500000 256 1472 0 1072 64 160 3 1 388x 291
+monitorrange: 30-109, 48-160
+monitorname: CPD-E500E
+monitorserial: 6044632

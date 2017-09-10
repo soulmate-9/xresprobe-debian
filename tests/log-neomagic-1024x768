@@ -1,0 +1,723 @@
+Native res 1024x768
+
+This is a pre-release version of XFree86, and is not supported in any
+way.  Bugs may be reported to XFree86@XFree86.Org and patches submitted
+to fixes@XFree86.Org.  Before reporting bugs in pre-release versions,
+please check the latest version in the XFree86 CVS repository
+(http://www.XFree86.Org/cvs)
+
+XFree86 Version 4.2.1.1 (Debian 4.2.1-12.1 20031003005825
+james@nocrew.org) / X 
+Window System
+(protocol Version 11, revision 0, vendor release 6600)
+Release Date: 18 October 2002
+        If the server is older than 6-12 months, or if your card is
+        newer than the above date, look for a newer version before
+        reporting problems.  (See http://www.XFree86.Org/)
+Build Operating System: Linux 2.4.21-rc1-ac1-cryptoloop i686 [ELF] 
+Module Loader present
+Markers: (--) probed, (**) from config file, (==) default setting,
+         (++) from command line, (!!) notice, (II) informational,
+         (WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/XFree86.0.log", Time: Mon Aug 16 18:16:34 2004
+(==) Using config file: "/etc/X11/XF86Config-4"
+(==) ServerLayout "Default Layout"
+(**) |-->Screen "Default Screen" (0)
+(**) |   |-->Monitor "PS2Mouse"
+(**) |   |-->Device "Neomagic"
+(**) |-->Input Device "Generic Keyboard"
+(**) Option "XkbRules" "xfree86"
+(**) XKB: rules: "xfree86"
+(**) Option "XkbModel" "pc104"
+(**) XKB: model: "pc104"
+(**) Option "XkbLayout" "us"
+(**) XKB: layout: "us"
+(==) Keyboard: CustomKeycode disabled
+(**) |-->Input Device "Configured Mouse"
+(**) |-->Input Device "Generic Mouse"
+(WW) The directory "/usr/lib/X11/fonts/CID" does not exist.
+        Entry deleted from font path.
+(WW) The directory "/usr/lib/X11/fonts/cyrillic" does not exist.
+        Entry deleted from font path.
+(**) FontPath set to
+"unix/:7100,/usr/lib/X11/fonts/Type1,/usr/lib/X11/fonts/Spe
+edo,/usr/lib/X11/fonts/misc,/usr/lib/X11/fonts/100dpi,/usr/lib/X11/fonts/75dpi"
+(==) RgbPath set to "/usr/X11R6/lib/X11/rgb"
+(==) ModulePath set to "/usr/X11R6/lib/modules"
+(++) using VT number 7
+
+(II) Open APM successful
+(II) Module ABI versions:
+        XFree86 ANSI C Emulation: 0.1
+        XFree86 Video Driver: 0.5
+        XFree86 XInput driver : 0.3
+        XFree86 Server Extension : 0.1
+        XFree86 Font Renderer : 0.3
+(II) Loader running on linux
+(II) LoadModule: "bitmap"
+(II) Loading /usr/X11R6/lib/modules/fonts/libbitmap.a
+(II) Module bitmap: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.0
+        Module class: XFree86 Font Renderer
+        ABI class: XFree86 Font Renderer, version 0.3
+(II) Loading font Bitmap
+(II) LoadModule: "pcidata"
+(II) Loading /usr/X11R6/lib/modules/libpcidata.a
+(II) Module pcidata: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 0.1.0
+        ABI class: XFree86 Video Driver, version 0.5
+(II) PCI: Probing config type using method 1
+(II) PCI: Config type is 1
+(II) PCI: stages = 0x03, oldVal1 = 0x80003ac0, mode1Res1 = 0x80000000
+(II) PCI: PCI scan (all values are in hex)
+(II) PCI: 00:00:0: chip 8086,7190 card 0000,0000 rev 03 class 06,00,00
+hdr 00
+(II) PCI: 00:01:0: chip 8086,7191 card 0000,0000 rev 03 class 06,04,00
+hdr 01
+(II) PCI: 00:02:0: chip 104c,ac1d card 4000,0000 rev 00 class 06,07,00
+hdr 82
+(II) PCI: 00:02:1: chip 104c,ac1d card 4800,0000 rev 00 class 06,07,00
+hdr 82
+(II) PCI: 00:06:0: chip 1013,6001 card 1014,1010 rev 01 class 04,01,00
+hdr 00
+(II) PCI: 00:07:0: chip 8086,7110 card 0000,0000 rev 02 class 06,80,00
+hdr 80
+(II) PCI: 00:07:1: chip 8086,7111 card 0000,0000 rev 01 class 01,01,80
+hdr 00
+(II) PCI: 00:07:2: chip 8086,7112 card 0000,0000 rev 01 class 0c,03,00
+hdr 00
+(II) PCI: 00:07:3: chip 8086,7113 card 0000,0000 rev 02 class 06,80,00
+hdr 00
+(II) PCI: 01:00:0: chip 10c8,0005 card 1014,00dd rev 12 class 03,00,00
+hdr 00
+(II) PCI: End of PCI scan
+(II) LoadModule: "scanpci"
+(II) Loading /usr/X11R6/lib/modules/libscanpci.a
+(II) Module scanpci: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 0.1.0
+        ABI class: XFree86 Video Driver, version 0.5
+(II) UnloadModule: "scanpci"
+(II) Unloading /usr/X11R6/lib/modules/libscanpci.a
+(II) Host-to-PCI bridge:
+(II) PCI-to-PCI bridge:
+(II) Bus 0: bridge is at (0:0:0), (-1,0,0), BCTRL: 0x08 (VGA_EN is set)
+(II) Bus 0 I/O range:
+        [0] -1 0        0x00000000 - 0x0000ffff (0x10000) IX[B]
+(II) Bus 0 non-prefetchable memory range:
+        [0] -1 0        0x00000000 - 0xffffffff (0x0) MX[B]
+(II) Bus 0 prefetchable memory range:
+        [0] -1 0        0x00000000 - 0xffffffff (0x0) MX[B]
+(II) Bus 1: bridge is at (0:1:0), (0,1,1), BCTRL: 0x88 (VGA_EN is set)
+(II) Bus 1 I/O range:
+        [0] -1 0        0x0000d000 - 0x0000dfff (0x1000) IX[B]
+(II) Bus 1 non-prefetchable memory range:
+        [0] -1 0        0x70000000 - 0xdfffffff (0x70000000) MX[B]
+(II) Bus 1 prefetchable memory range:
+        [0] -1 0        0xe0000000 - 0xf7ffffff (0x18000000) MX[B]
+(--) PCI:*(1:0:0) Neomagic NM2200 rev 18, Mem @ 0xe0000000/24,
+0x70000000/22, 0x
+70400000/20
+(II) Addressable bus resource ranges are
+        [0] -1 0        0x00000000 - 0xffffffff (0x0) MX[B]
+        [1] -1 0        0x00000000 - 0x0000ffff (0x10000) IX[B]
+(II) OS-reported resource ranges:
+        [0] -1 0        0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+        [1] -1 0        0x00100000 - 0x3fffffff (0x3ff00000) MX[B]E(B)
+        [2] -1 0        0x000f0000 - 0x000fffff (0x10000) MX[B]
+        [3] -1 0        0x000c0000 - 0x000effff (0x30000) MX[B]
+        [4] -1 0        0x00000000 - 0x0009ffff (0xa0000) MX[B]
+        [5] -1 0        0x0000ffff - 0x0000ffff (0x1) IX[B]
+        [6] -1 0        0x00000000 - 0x000000ff (0x100) IX[B]
+(II) Active PCI resource ranges:
+        [0] -1 0        0x50000000 - 0x500fffff (0x100000) MX[B]
+        [1] -1 0        0x50100000 - 0x50100fff (0x1000) MX[B]
+        [2] -1 0        0x40000000 - 0x43ffffff (0x4000000) MX[B]
+        [3] -1 0        0x70400000 - 0x704fffff (0x100000) MX[B](B)
+        [4] -1 0        0x70000000 - 0x703fffff (0x400000) MX[B](B)
+        [5] -1 0        0xe0000000 - 0xe0ffffff (0x1000000) MX[B](B)
+        [6] -1 0        0x00008400 - 0x0000841f (0x20) IX[B]
+        [7] -1 0        0x0000fcf0 - 0x0000fcff (0x10) IX[B]
+(II) Active PCI resource ranges after removing overlaps:
+        [0] -1 0        0x50000000 - 0x500fffff (0x100000) MX[B]
+        [1] -1 0        0x50100000 - 0x50100fff (0x1000) MX[B]
+        [2] -1 0        0x40000000 - 0x43ffffff (0x4000000) MX[B]
+        [3] -1 0        0x70400000 - 0x704fffff (0x100000) MX[B](B)
+        [4] -1 0        0x70000000 - 0x703fffff (0x400000) MX[B](B)
+        [5] -1 0        0xe0000000 - 0xe0ffffff (0x1000000) MX[B](B)
+        [6] -1 0        0x00008400 - 0x0000841f (0x20) IX[B]
+        [7] -1 0        0x0000fcf0 - 0x0000fcff (0x10) IX[B]
+(II) OS-reported resource ranges after removing overlaps with PCI:
+        [0] -1 0        0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+        [1] -1 0        0x00100000 - 0x3fffffff (0x3ff00000) MX[B]E(B)
+        [2] -1 0        0x000f0000 - 0x000fffff (0x10000) MX[B]
+        [3] -1 0        0x000c0000 - 0x000effff (0x30000) MX[B]
+        [4] -1 0        0x00000000 - 0x0009ffff (0xa0000) MX[B]
+        [5] -1 0        0x0000ffff - 0x0000ffff (0x1) IX[B]
+        [6] -1 0        0x00000000 - 0x000000ff (0x100) IX[B]
+(II) All system resource ranges:
+        [0] -1 0        0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+        [1] -1 0        0x00100000 - 0x3fffffff (0x3ff00000) MX[B]E(B)
+        [2] -1 0        0x000f0000 - 0x000fffff (0x10000) MX[B]
+        [3] -1 0        0x000c0000 - 0x000effff (0x30000) MX[B]
+        [4] -1 0        0x00000000 - 0x0009ffff (0xa0000) MX[B]
+        [5] -1 0        0x50000000 - 0x500fffff (0x100000) MX[B]
+        [6] -1 0        0x50100000 - 0x50100fff (0x1000) MX[B]
+        [7] -1 0        0x40000000 - 0x43ffffff (0x4000000) MX[B]
+        [8] -1 0        0x70400000 - 0x704fffff (0x100000) MX[B](B)
+        [9] -1 0        0x70000000 - 0x703fffff (0x400000) MX[B](B)
+        [10] -1 0       0xe0000000 - 0xe0ffffff (0x1000000) MX[B](B)
+        [11] -1 0       0x0000ffff - 0x0000ffff (0x1) IX[B]
+        [12] -1 0       0x00000000 - 0x000000ff (0x100) IX[B]
+        [13] -1 0       0x00008400 - 0x0000841f (0x20) IX[B]
+        [14] -1 0       0x0000fcf0 - 0x0000fcff (0x10) IX[B]
+(II) LoadModule: "GLcore"
+(II) Loading /usr/X11R6/lib/modules/extensions/libGLcore.a
+Skipping "/usr/X11R6/lib/modules/extensions/libGLcore.a:debug_xform.o":
+No symbols found
+(II) Module GLcore: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.0
+        ABI class: XFree86 Server Extension, version 0.1
+(II) LoadModule: "bitmap"
+(II) Reloading /usr/X11R6/lib/modules/fonts/libbitmap.a
+(II) Loading font Bitmap
+(II) LoadModule: "dbe"
+(II) Loading /usr/X11R6/lib/modules/extensions/libdbe.a
+(II) Module dbe: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.0
+        Module class: XFree86 Server Extension
+        ABI class: XFree86 Server Extension, version 0.1
+(II) Loading extension DOUBLE-BUFFER
+(II) LoadModule: "ddc"
+(II) Loading /usr/X11R6/lib/modules/libddc.a
+(II) Module ddc: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.0
+        ABI class: XFree86 Video Driver, version 0.5
+(II) LoadModule: "dri"
+(II) Loading /usr/X11R6/lib/modules/extensions/libdri.a
+(II) Module dri: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.0
+        ABI class: XFree86 Server Extension, version 0.1
+(II) Loading sub module "drm"
+(II) LoadModule: "drm"
+(II) Loading /usr/X11R6/lib/modules/linux/libdrm.a
+(II) Module drm: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.0
+        ABI class: XFree86 Server Extension, version 0.1
+(II) Loading extension XFree86-DRI
+(II) LoadModule: "extmod"
+(II) Loading /usr/X11R6/lib/modules/extensions/libextmod.a
+(II) Module extmod: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.0
+        Module class: XFree86 Server Extension
+        ABI class: XFree86 Server Extension, version 0.1
+(II) Loading extension SHAPE
+(II) Loading extension MIT-SUNDRY-NONSTANDARD
+(II) Loading extension BIG-REQUESTS
+(II) Loading extension SYNC
+(II) Loading extension MIT-SCREEN-SAVER
+(II) Loading extension XC-MISC
+(II) Loading extension XFree86-VidModeExtension
+(II) Loading extension XFree86-Misc
+(II) Loading extension XFree86-DGA
+(II) Loading extension DPMS
+(II) Loading extension FontCache
+(II) Loading extension TOG-CUP
+(II) Loading extension Extended-Visual-Information
+(II) Loading extension XVideo
+(II) Loading extension XVideo-MotionCompensation
+(II) LoadModule: "freetype"
+(II) Loading /usr/X11R6/lib/modules/fonts/libfreetype.a
+(II) Module freetype: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.1.10
+        Module class: XFree86 Font Renderer
+        ABI class: XFree86 Font Renderer, version 0.3
+(II) Loading font FreeType
+(II) LoadModule: "glx"
+(II) Loading /usr/X11R6/lib/modules/extensions/libglx.a
+(II) Module glx: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.0
+        ABI class: XFree86 Server Extension, version 0.1
+(II) Loading sub module "GLcore"
+(II) LoadModule: "GLcore"
+(II) Reloading /usr/X11R6/lib/modules/extensions/libGLcore.a
+(II) Loading extension GLX
+(II) LoadModule: "int10"
+(II) Loading /usr/X11R6/lib/modules/linux/libint10.a
+(II) Module int10: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.0
+        ABI class: XFree86 Video Driver, version 0.5
+(II) LoadModule: "record"
+(II) Loading /usr/X11R6/lib/modules/extensions/librecord.a
+(II) Module record: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.13.0
+        Module class: XFree86 Server Extension
+        ABI class: XFree86 Server Extension, version 0.1
+(II) Loading extension RECORD
+(II) LoadModule: "speedo"
+(II) Loading /usr/X11R6/lib/modules/fonts/libspeedo.a
+Skipping "/usr/X11R6/lib/modules/fonts/libspeedo.a:spencode.o":  No
+symbols foun
+d
+(II) Module speedo: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.1
+        Module class: XFree86 Font Renderer
+        ABI class: XFree86 Font Renderer, version 0.3
+(II) Loading font Speedo
+(II) LoadModule: "type1"
+(II) Loading /usr/X11R6/lib/modules/fonts/libtype1.a
+(II) Module type1: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.1
+        Module class: XFree86 Font Renderer
+        ABI class: XFree86 Font Renderer, version 0.3
+(II) Loading font Type1
+(II) Loading font CID
+(II) LoadModule: "vbe"
+(II) Loading /usr/X11R6/lib/modules/libvbe.a
+(II) Module vbe: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.0
+        ABI class: XFree86 Video Driver, version 0.5
+(II) LoadModule: "neomagic"
+(II) Loading /usr/X11R6/lib/modules/drivers/neomagic_drv.o
+(II) Module neomagic: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.0
+        Module class: XFree86 Video Driver
+        ABI class: XFree86 Video Driver, version 0.5
+(II) LoadModule: "mouse"
+(II) Loading /usr/X11R6/lib/modules/input/mouse_drv.o
+(II) Module mouse: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.0
+        Module class: XFree86 XInput Driver
+        ABI class: XFree86 XInput driver, version 0.3
+(II) NEOMAGIC: Driver for Neomagic chipsets: neo2070, neo2090, neo2093,
+        neo2097, neo2160, neo2200, neo2230, neo2360, neo2380
+(II) Primary Device is: PCI 01:00:0
+(--) Assigning device section with no busID to primary device
+(--) Chipset neo2200 found
+(II) resource ranges after xf86ClaimFixedResources() call:
+        [0] -1 0        0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+        [1] -1 0        0x00100000 - 0x3fffffff (0x3ff00000) MX[B]E(B)
+        [2] -1 0        0x000f0000 - 0x000fffff (0x10000) MX[B]
+        [3] -1 0        0x000c0000 - 0x000effff (0x30000) MX[B]
+        [4] -1 0        0x00000000 - 0x0009ffff (0xa0000) MX[B]
+        [5] -1 0        0x50000000 - 0x500fffff (0x100000) MX[B]
+        [6] -1 0        0x50100000 - 0x50100fff (0x1000) MX[B]
+        [7] -1 0        0x40000000 - 0x43ffffff (0x4000000) MX[B]
+        [8] -1 0        0x70400000 - 0x704fffff (0x100000) MX[B](B)
+        [9] -1 0        0x70000000 - 0x703fffff (0x400000) MX[B](B)
+        [10] -1 0       0xe0000000 - 0xe0ffffff (0x1000000) MX[B](B)
+        [11] -1 0       0x0000ffff - 0x0000ffff (0x1) IX[B]
+        [12] -1 0       0x00000000 - 0x000000ff (0x100) IX[B]
+        [13] -1 0       0x00008400 - 0x0000841f (0x20) IX[B]
+        [14] -1 0       0x0000fcf0 - 0x0000fcff (0x10) IX[B]
+(II) resource ranges after probing:
+        [0] -1 0        0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+        [1] -1 0        0x00100000 - 0x3fffffff (0x3ff00000) MX[B]E(B)
+        [2] -1 0        0x000f0000 - 0x000fffff (0x10000) MX[B]
+        [3] -1 0        0x000c0000 - 0x000effff (0x30000) MX[B]
+        [4] -1 0        0x00000000 - 0x0009ffff (0xa0000) MX[B]
+        [5] -1 0        0x50000000 - 0x500fffff (0x100000) MX[B]
+        [6] -1 0        0x50100000 - 0x50100fff (0x1000) MX[B]
+        [7] -1 0        0x40000000 - 0x43ffffff (0x4000000) MX[B]
+        [8] -1 0        0x70400000 - 0x704fffff (0x100000) MX[B](B)
+        [9] -1 0        0x70000000 - 0x703fffff (0x400000) MX[B](B)
+        [10] -1 0       0xe0000000 - 0xe0ffffff (0x1000000) MX[B](B)
+        [11] 0 0        0x000a0000 - 0x000affff (0x10000) MS[B]
+        [12] 0 0        0x000b0000 - 0x000b7fff (0x8000) MS[B]
+        [13] 0 0        0x000b8000 - 0x000bffff (0x8000) MS[B]
+        [14] -1 0       0x0000ffff - 0x0000ffff (0x1) IX[B]
+        [15] -1 0       0x00000000 - 0x000000ff (0x100) IX[B]
+        [16] -1 0       0x00008400 - 0x0000841f (0x20) IX[B]
+        [17] -1 0       0x0000fcf0 - 0x0000fcff (0x10) IX[B]
+        [18] 0 0        0x000003b0 - 0x000003bb (0xc) IS[B]
+        [19] 0 0        0x000003c0 - 0x000003df (0x20) IS[B]
+(II) Setting vga for screen 0.
+(II) Loading sub module "vgahw"
+(II) LoadModule: "vgahw"
+(II) Loading /usr/X11R6/lib/modules/libvgahw.a
+(II) Module vgahw: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 0.1.0
+        ABI class: XFree86 Video Driver, version 0.5
+(II) NEOMAGIC(0): Chipset is a MagicMedia 256AV (NM2200)
+(II) NEOMAGIC(0): vgaHWGetIOBase: hwp->IOBase is 0x03d0, hwp->PIOOffset
+is 0x000
+0
+(--) NEOMAGIC(0): Panel is a 1024x768 color TFT display
+(II) Loading sub module "ddc"
+(II) LoadModule: "ddc"
+(II) Reloading /usr/X11R6/lib/modules/libddc.a
+(II) Loading sub module "vbe"
+(II) LoadModule: "vbe"
+(II) Reloading /usr/X11R6/lib/modules/libvbe.a
+(II) Loading sub module "int10"
+(II) LoadModule: "int10"
+(II) Reloading /usr/X11R6/lib/modules/linux/libint10.a
+(II) NEOMAGIC(0): initializing int10
+(II) NEOMAGIC(0): Primary V_BIOS segment is: 0xc000
+(II) NEOMAGIC(0): VESA BIOS detected
+(II) NEOMAGIC(0): VESA VBE Version 2.0
+(II) NEOMAGIC(0): VESA VBE Total Mem: 2496 kB
+(II) NEOMAGIC(0): VESA VBE OEM: MagicMedia 256AV  48K
+(II) NEOMAGIC(0): VESA VBE OEM Software Rev: 1.15
+(II) NEOMAGIC(0): VESA VBE OEM Vendor: NeoMagic
+(II) NEOMAGIC(0): VESA VBE OEM Product: MagicMedia 256AV 
+(II) NEOMAGIC(0): VESA VBE OEM Product Rev: 01.0
+(II) Loading sub module "ddc"
+(II) LoadModule: "ddc"
+(II) Reloading /usr/X11R6/lib/modules/libddc.a
+(II) NEOMAGIC(0): VESA VBE DDC supported
+(II) NEOMAGIC(0): VESA VBE DDC Level none
+(II) NEOMAGIC(0): VESA VBE DDC transfer in appr. 0 sec.
+(II) NEOMAGIC(0): VESA VBE DDC read failed
+(II) Loading sub module "i2c"
+(II) LoadModule: "i2c"
+(II) Loading /usr/X11R6/lib/modules/libi2c.a
+(II) Module i2c: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.2.0
+        ABI class: XFree86 Video Driver, version 0.5
+(II) NEOMAGIC(0): I2C bus "I2C bus" initialized.
+(II) NEOMAGIC(0): I2C device "I2C bus:ddc2" registered.
+(II) NEOMAGIC(0): I2C device "I2C bus:ddc2" removed.
+(--) NEOMAGIC(0): No DDC signal
+(**) NEOMAGIC(0): Depth 16, (--) framebuffer bpp 16
+(==) NEOMAGIC(0): RGB weight 565
+(==) NEOMAGIC(0): Default visual is TrueColor
+(==) NEOMAGIC(0): Using gamma correction (1.0, 1.0, 1.0)
+(--) NEOMAGIC(0): Internal LCD only display mode
+(==) NEOMAGIC(0): using linear mode
+(**) NEOMAGIC(0): using PCI Burst mode
+(**) NEOMAGIC(0): Option StrangeLockups set: disabling some acceleration
+(--) NEOMAGIC(0): FB base address is set at 0xE0000000.
+(--) NEOMAGIC(0): MMIO base address is set at 0x70000000.
+(--) NEOMAGIC(0): MMIO base address2 is set at 0x70400000.
+(--) NEOMAGIC(0): VideoRAM: 2560 kByte
+(--) NEOMAGIC(0): Max Clock: 110000 kHz
+(II) NEOMAGIC(0): PS2Mouse: Using hsync range of 28.00-49.00 kHz
+(II) NEOMAGIC(0): PS2Mouse: Using vrefresh range of 43.00-72.00 Hz
+(II) NEOMAGIC(0): Clock range:  11.00 to 110.00 MHz
+(II) NEOMAGIC(0): Removing mode (640x350) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "640x350" (unknown reason)
+(II) NEOMAGIC(0): Removing mode (320x175) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "320x175" (unknown reason)
+(II) NEOMAGIC(0): Removing mode (640x400) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "640x400" (unknown reason)
+(II) NEOMAGIC(0): Removing mode (320x200) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "320x200" (unknown reason)
+(II) NEOMAGIC(0): Removing mode (720x400) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "720x400" (unknown reason)
+(II) NEOMAGIC(0): Removing mode (360x200) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "360x200" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "640x480" (vrefresh out of
+range)
+(II) NEOMAGIC(0): Not using default mode "320x240" (vrefresh out of
+range)
+(II) NEOMAGIC(0): Not using default mode "640x480" (vrefresh out of
+range)
+(II) NEOMAGIC(0): Not using default mode "320x240" (vrefresh out of
+range)
+(II) NEOMAGIC(0): Not using default mode "640x480" (vrefresh out of
+range)
+(II) NEOMAGIC(0): Not using default mode "320x240" (vrefresh out of
+range)
+(II) NEOMAGIC(0): Removing mode (400x300) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "400x300" (unknown reason)
+(II) NEOMAGIC(0): Removing mode (400x300) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "400x300" (unknown reason)
+(II) NEOMAGIC(0): Removing mode (400x300) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "400x300" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "800x600" (vrefresh out of
+range)
+(II) NEOMAGIC(0): Removing mode (400x300) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "400x300" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "800x600" (hsync out of range)
+(II) NEOMAGIC(0): Removing mode (400x300) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "400x300" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "1024x768" (bad mode
+clock/interlace/do
+ublescan)
+(II) NEOMAGIC(0): Not using default mode "512x384" (bad mode
+clock/interlace/dou
+blescan)
+(II) NEOMAGIC(0): Removing mode (512x384) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "512x384" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "1024x768" (hsync out of range)
+(II) NEOMAGIC(0): Removing mode (512x384) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "512x384" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "1024x768" (hsync out of range)
+(II) NEOMAGIC(0): Removing mode (512x384) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "512x384" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "1024x768" (hsync out of range)
+(II) NEOMAGIC(0): Removing mode (512x384) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "512x384" (unknown reason)
+(II) NEOMAGIC(0): Removing mode (1152x864) larger than the LCD panel
+(1024x768)
+(II) NEOMAGIC(0): Not using default mode "1152x864" (unknown reason)
+(II) NEOMAGIC(0): Removing mode (576x432) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "576x432" (unknown reason)
+(II) NEOMAGIC(0): Removing mode (1280x960) larger than the LCD panel
+(1024x768)
+(II) NEOMAGIC(0): Not using default mode "1280x960" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "640x480" (hsync out of range)
+(II) NEOMAGIC(0): Not using default mode "1280x960" (bad mode
+clock/interlace/do
+ublescan)
+(II) NEOMAGIC(0): Not using default mode "640x480" (hsync out of range)
+(II) NEOMAGIC(0): Removing mode (1280x1024) larger than the LCD panel
+(1024x768)
+(II) NEOMAGIC(0): Not using default mode "1280x1024" (unknown reason)
+(II) NEOMAGIC(0): Removing mode (640x512) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "640x512" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "1280x1024" (bad mode
+clock/interlace/d
+oublescan)
+(II) NEOMAGIC(0): Removing mode (640x512) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "640x512" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "1280x1024" (bad mode
+clock/interlace/d
+oublescan)
+(II) NEOMAGIC(0): Removing mode (640x512) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "640x512" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "1600x1200" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Not using default mode "800x600" (hsync out of range)
+(II) NEOMAGIC(0): Not using default mode "1600x1200" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Not using default mode "800x600" (hsync out of range)
+(II) NEOMAGIC(0): Not using default mode "1600x1200" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Not using default mode "800x600" (hsync out of range)
+(II) NEOMAGIC(0): Not using default mode "1600x1200" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Not using default mode "800x600" (hsync out of range)
+(II) NEOMAGIC(0): Not using default mode "1600x1200" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Not using default mode "800x600" (bad mode
+clock/interlace/dou
+blescan)
+(II) NEOMAGIC(0): Not using default mode "1792x1344" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Removing mode (896x672) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "896x672" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "1792x1344" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Not using default mode "896x672" (bad mode
+clock/interlace/dou
+blescan)
+(II) NEOMAGIC(0): Not using default mode "1856x1392" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Removing mode (928x696) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "928x696" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "1856x1392" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Not using default mode "928x696" (bad mode
+clock/interlace/dou
+blescan)
+(II) NEOMAGIC(0): Not using default mode "1920x1440" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Not using default mode "960x720" (bad mode
+clock/interlace/dou
+blescan)
+(II) NEOMAGIC(0): Not using default mode "1920x1440" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Not using default mode "960x720" (bad mode
+clock/interlace/dou
+blescan)
+(II) NEOMAGIC(0): Removing mode (832x624) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "832x624" (unknown reason)
+(II) NEOMAGIC(0): Removing mode (416x312) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "416x312" (unknown reason)
+(II) NEOMAGIC(0): Removing mode (1152x768) larger than the LCD panel
+(1024x768)
+(II) NEOMAGIC(0): Not using default mode "1152x768" (unknown reason)
+(II) NEOMAGIC(0): Removing mode (576x384) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "576x384" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "1400x1050" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Removing mode (700x525) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "700x525" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "1400x1050" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Removing mode (700x525) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "700x525" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "1600x1024" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Removing mode (800x512) that won't display properly on
+LCD
+(II) NEOMAGIC(0): Not using default mode "800x512" (unknown reason)
+(II) NEOMAGIC(0): Not using default mode "1920x1440" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Not using default mode "960x720" (bad mode
+clock/interlace/dou
+blescan)
+(II) NEOMAGIC(0): Not using default mode "2048x1536" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Not using default mode "1024x768" (bad mode
+clock/interlace/do
+ublescan)
+(II) NEOMAGIC(0): Not using default mode "2048x1536" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Not using default mode "1024x768" (bad mode
+clock/interlace/do
+ublescan)
+(II) NEOMAGIC(0): Not using default mode "2048x1536" (insufficient
+memory for mo
+de)
+(II) NEOMAGIC(0): Not using default mode "1024x768" (bad mode
+clock/interlace/do
+ublescan)
+(II) NEOMAGIC(0): Not using mode "1280x960" (no mode of this name)
+(II) NEOMAGIC(0): Not using mode "1152x864" (no mode of this name)
+(--) NEOMAGIC(0): Virtual size is 1024x768 (pitch 1024)
+(**) NEOMAGIC(0): Default mode "1024x768": 65.0 MHz, 48.4 kHz, 60.0 Hz
+(II) NEOMAGIC(0): Modeline "1024x768"   65.00  1024 1048 1184 1344  768
+771 777 
+806 -hsync -vsync
+(**) NEOMAGIC(0): Default mode "800x600": 50.0 MHz, 48.1 kHz, 72.2 Hz
+(II) NEOMAGIC(0): Modeline "800x600"   50.00  800 856 976 1040  600 637
+643 666 
++hsync +vsync
+(**) NEOMAGIC(0): Default mode "640x480": 25.2 MHz, 31.5 kHz, 60.0 Hz
+(II) NEOMAGIC(0): Modeline "640x480"   25.20  640 656 752 800  480 490
+492 525 -
+hsync -vsync
+(++) NEOMAGIC(0): DPI set to (100, 100)
+(II) Loading sub module "fb"
+(II) LoadModule: "fb"
+(II) Loading /usr/X11R6/lib/modules/libfb.a
+(II) Module fb: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.0
+        ABI class: XFree86 ANSI C Emulation, version 0.1
+(II) Loading sub module "xaa"
+(II) LoadModule: "xaa"
+(II) Loading /usr/X11R6/lib/modules/libxaa.a
+(II) Module xaa: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 1.0.0
+        ABI class: XFree86 Video Driver, version 0.5
+(II) Loading sub module "ramdac"
+(II) LoadModule: "ramdac"
+(II) Loading /usr/X11R6/lib/modules/libramdac.a
+(II) Module ramdac: vendor="The XFree86 Project"
+        compiled for 4.2.1.1, module version = 0.1.0
+        ABI class: XFree86 Video Driver, version 0.5
+(II) do I need RAC?  No, I don't.
+(II) resource ranges after preInit:
+        [0] 0 0 0x70400000 - 0x704fffff (0x100000) MX[B]
+        [1] 0 0 0x70000000 - 0x703fffff (0x400000) MX[B]
+        [2] 0 0 0xe0000000 - 0xe0ffffff (0x1000000) MX[B]
+        [3] -1 0        0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+        [4] -1 0        0x00100000 - 0x3fffffff (0x3ff00000) MX[B]E(B)
+        [5] -1 0        0x000f0000 - 0x000fffff (0x10000) MX[B]
+        [6] -1 0        0x000c0000 - 0x000effff (0x30000) MX[B]
+        [7] -1 0        0x00000000 - 0x0009ffff (0xa0000) MX[B]
+        [8] -1 0        0x50000000 - 0x500fffff (0x100000) MX[B]
+        [9] -1 0        0x50100000 - 0x50100fff (0x1000) MX[B]
+        [10] -1 0       0x40000000 - 0x43ffffff (0x4000000) MX[B]
+        [11] -1 0       0x70400000 - 0x704fffff (0x100000) MX[B](B)
+        [12] -1 0       0x70000000 - 0x703fffff (0x400000) MX[B](B)
+        [13] -1 0       0xe0000000 - 0xe0ffffff (0x1000000) MX[B](B)
+        [14] 0 0        0x000a0000 - 0x000affff (0x10000) MS[B]
+        [15] 0 0        0x000b0000 - 0x000b7fff (0x8000) MS[B]
+        [16] 0 0        0x000b8000 - 0x000bffff (0x8000) MS[B]
+        [17] -1 0       0x0000ffff - 0x0000ffff (0x1) IX[B]
+        [18] -1 0       0x00000000 - 0x000000ff (0x100) IX[B]
+        [19] -1 0       0x00008400 - 0x0000841f (0x20) IX[B]
+        [20] -1 0       0x0000fcf0 - 0x0000fcff (0x10) IX[B]
+        [21] 0 0        0x000003b0 - 0x000003bb (0xc) IS[B]
+        [22] 0 0        0x000003c0 - 0x000003df (0x20) IS[B]
+(==) NEOMAGIC(0): Write-combining range (0xe0000000,0x400000)
+(II) NEOMAGIC(0): Stretching disabled
+(II) NEOMAGIC(0): Using linear framebuffer at: 0xE0000000
+(--) NEOMAGIC(0): 1048576 bytes off-screen memory available
+(II) NEOMAGIC(0): Using H/W Cursor.
+(II) NEOMAGIC(0): Using 256 scanlines of offscreen memory 
+(II) NEOMAGIC(0): Using XFree86 Acceleration Architecture (XAA)
+        Screen to screen bit blits
+        Solid filled rectangles
+        Solid Horizontal and Vertical Lines
+        Offscreen Pixmaps
+        Setting up tile and stipple cache:
+                16 128x128 slots
+(II) NEOMAGIC(0): Acceleration  Initialized
+(==) NEOMAGIC(0): Backing store disabled
+(==) NEOMAGIC(0): Silken mouse enabled
+(**) Option "dpms"
+(**) NEOMAGIC(0): DPMS enabled
+(II) Setting vga for screen 0.
+(II) Initializing built-in extension MIT-SHM
+(II) Initializing built-in extension XInputExtension
+(II) Initializing built-in extension XTEST
+(II) Initializing built-in extension XKEYBOARD
+(II) Initializing built-in extension LBX
+(II) Initializing built-in extension XC-APPGROUP
+(II) Initializing built-in extension SECURITY
+(II) Initializing built-in extension XINERAMA
+(II) Initializing built-in extension XFree86-Bigfont
+(II) Initializing built-in extension RENDER
+(II) Keyboard "Generic Keyboard" handled by legacy driver
+(**) Option "Protocol" "PS/2"
+(**) Configured Mouse: Protocol: "PS/2"
+(**) Configured Mouse: Core Pointer
+(**) Option "Device" "/dev/psaux"
+(==) Configured Mouse: Buttons: 3
+(**) Option "Protocol" "ImPS/2"
+(**) Generic Mouse: Protocol: "ImPS/2"
+(**) Generic Mouse: always reports core events
+(**) Option "Device" "/dev/input/mice"
+(EE) xf86OpenSerial: Cannot open device /dev/input/mice
+        No such device.
+(EE) Generic Mouse: cannot open input device
+(EE) PreInit failed for input device "Generic Mouse"
+(II) UnloadModule: "mouse"
+(II) XINPUT: Adding extended input device "Configured Mouse" (type:
+MOUSE)
+(II) PM Event received: System Suspend Request
+(II) PM Event received: Power Status Change
+(II) PM Event received: Normal Resume System
+(II) NEOMAGIC(0): Stretching disabled
+
+-- 
+Nathan Parslow
+parslow@optusnet.com.au
+

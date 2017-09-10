@@ -1,0 +1,337 @@
+XFree86 Version 4.1.0 / X Window System
+(protocol Version 11, revision 0, vendor release 6510)
+Release Date: 2 June 2001
+	If the server is older than 6-12 months, or if your card is
+	newer than the above date, look for a newer version before
+	reporting problems.  (See http://www.XFree86.Org/FAQ)
+Build Operating System: Linux 2.2.19 i686 [ELF] 
+Module Loader present
+(==) Log file: "/var/log/XFree86.0.log", Time: Fri Jun 15 22:52:56 2001
+(==) Using config file: "/etc/X11/XF86Config-4"
+Markers: (--) probed, (**) from config file, (==) default setting,
+         (++) from command line, (!!) notice, (II) informational,
+         (WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) ServerLayout "XFree86 Configured"
+(**) |-->Screen "Screen0" (0)
+(**) |   |-->Monitor "Monitor0"
+(**) |   |-->Device "C&T 65555"
+(**) |-->Input Device "Mouse0"
+(**) |-->Input Device "Keyboard0"
+(**) Option "XkbRules" "xfree86"
+(**) XKB: rules: "xfree86"
+(**) Option "XkbModel" "pc105"
+(**) XKB: model: "pc105"
+(**) Option "XkbLayout" "us"
+(**) XKB: layout: "us"
+(==) Keyboard: CustomKeycode disabled
+(WW) The directory "/usr/X11R6/lib/X11/fonts/local/" does not exist.
+	Entry deleted from font path.
+(**) FontPath set to "/usr/X11R6/lib/X11/fonts/misc/,/usr/X11R6/lib/X11/fonts/75dpi/:unscaled,/usr/X11R6/lib/X11/fonts/100dpi/:unscaled,/usr/X11R6/lib/X11/fonts/Type1/,/usr/X11R6/lib/X11/fonts/Speedo/,/usr/X11R6/lib/X11/fonts/75dpi/,/usr/X11R6/lib/X11/fonts/100dpi/"
+(**) RgbPath set to "/usr/X11R6/lib/X11/rgb"
+(**) ModulePath set to "/usr/X11R6/lib/modules"
+(--) using VT number 7
+
+(II) Open APM successful
+(II) Module ABI versions:
+	XFree86 ANSI C Emulation: 0.1
+	XFree86 Video Driver: 0.4
+	XFree86 XInput driver : 0.2
+	XFree86 Server Extension : 0.1
+	XFree86 Font Renderer : 0.2
+(II) Loader running on linux
+(II) LoadModule: "bitmap"
+(II) Loading /usr/X11R6/lib/modules/fonts/libbitmap.a
+(II) Module bitmap: vendor="The XFree86 Project"
+	compiled for 4.1.0, module version = 1.0.0
+	Module class: XFree86 Font Renderer
+	ABI class: XFree86 Font Renderer, version 0.2
+(II) Loading font Bitmap
+(II) LoadModule: "pcidata"
+(II) Loading /usr/X11R6/lib/modules/libpcidata.a
+(II) Module pcidata: vendor="The XFree86 Project"
+	compiled for 4.1.0, module version = 0.1.0
+	ABI class: XFree86 Video Driver, version 0.4
+(II) PCI: Probing config type using method 1
+(II) PCI: Config type is 1
+(II) PCI: stages = 0x03, oldVal1 = 0x00000000, mode1Res1 = 0x80000000
+(II) PCI: PCI scan (all values are in hex)
+(II) PCI: 00:00:0: chip 8086,7192 card 1179,0001 rev 02 class 06,00,00 hdr 00
+(II) PCI: 00:02:0: chip 1179,060f card 1400,0000 rev 05 class 06,07,00 hdr 82
+(II) PCI: 00:02:1: chip 1179,060f card 1c00,0000 rev 05 class 06,07,00 hdr 82
+(II) PCI: 00:04:0: chip 102c,00e5 card 1179,0001 rev c6 class 03,00,00 hdr 00
+(II) PCI: 00:07:0: chip 8086,7110 card 0000,0000 rev 02 class 06,80,00 hdr 80
+(II) PCI: 00:07:1: chip 8086,7111 card 0000,0000 rev 01 class 01,01,80 hdr 00
+(II) PCI: 00:07:2: chip 8086,7112 card 0000,0000 rev 01 class 0c,03,00 hdr 00
+(II) PCI: 00:07:3: chip 8086,7113 card 0000,0000 rev 02 class 06,80,00 hdr 00
+(II) PCI: 00:0a:0: chip 1179,0701 card 1179,0001 rev 23 class 07,80,00 hdr 00
+(II) PCI: End of PCI scan
+(II) LoadModule: "scanpci"
+(II) Loading /usr/X11R6/lib/modules/libscanpci.a
+(II) Module scanpci: vendor="The XFree86 Project"
+	compiled for 4.1.0, module version = 0.1.0
+	ABI class: XFree86 Video Driver, version 0.4
+(II) UnloadModule: "scanpci"
+(II) Unloading /usr/X11R6/lib/modules/libscanpci.a
+(II) Host-to-PCI bridge:
+(II) Bus 0: bridge is at (0:0:0), (-1,0,0), BCTRL: 0x08 (VGA_EN is set)
+(II) Bus 0 I/O range:
+	[0] -1 0	0x00000000 - 0x0000ffff (0x10000) IX[B]
+(II) Bus 0 non-prefetchable memory range:
+	[0] -1 0	0x00000000 - 0xffffffff (0x0) MX[B]
+(II) Bus 0 prefetchable memory range:
+	[0] -1 0	0x00000000 - 0xffffffff (0x0) MX[B]
+(--) PCI:*(0:4:0) C&T 65555 rev 198, Mem @ 0xfe000000/24
+(II) Addressable bus resource ranges are
+	[0] -1 0	0x00000000 - 0xffffffff (0x0) MX[B]
+	[1] -1 0	0x00000000 - 0x0000ffff (0x10000) IX[B]
+(II) OS-reported resource ranges:
+	[0] -1 0	0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+	[1] -1 0	0x00100000 - 0x3fffffff (0x3ff00000) MX[B]E(B)
+	[2] -1 0	0x000f0000 - 0x000fffff (0x10000) MX[B]
+	[3] -1 0	0x000c0000 - 0x000effff (0x30000) MX[B]
+	[4] -1 0	0x00000000 - 0x0009ffff (0xa0000) MX[B]
+	[5] -1 0	0x0000ffff - 0x0000ffff (0x1) IX[B]
+	[6] -1 0	0x00000000 - 0x000000ff (0x100) IX[B]
+(II) Active PCI resource ranges:
+	[0] -1 0	0xe0000000 - 0xefffffff (0x10000000) MX[B]
+	[1] -1 0	0xfe000000 - 0xfeffffff (0x1000000) MX[B](B)
+	[2] -1 0	0x0000ff80 - 0x0000ff9f (0x20) IX[B]
+	[3] -1 0	0x0000ffe0 - 0x0000ffff (0x20) IX[B]
+	[4] -1 0	0x00001000 - 0x0000100f (0x10) IX[B]
+(II) Active PCI resource ranges after removing overlaps:
+	[0] -1 0	0xe0000000 - 0xefffffff (0x10000000) MX[B]
+	[1] -1 0	0xfe000000 - 0xfeffffff (0x1000000) MX[B](B)
+	[2] -1 0	0x0000ff80 - 0x0000ff9f (0x20) IX[B]
+	[3] -1 0	0x0000ffe0 - 0x0000ffff (0x20) IX[B]
+	[4] -1 0	0x00001000 - 0x0000100f (0x10) IX[B]
+(II) OS-reported resource ranges after removing overlaps with PCI:
+	[0] -1 0	0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+	[1] -1 0	0x00100000 - 0x3fffffff (0x3ff00000) MX[B]E(B)
+	[2] -1 0	0x000f0000 - 0x000fffff (0x10000) MX[B]
+	[3] -1 0	0x000c0000 - 0x000effff (0x30000) MX[B]
+	[4] -1 0	0x00000000 - 0x0009ffff (0xa0000) MX[B]
+	[5] -1 0	0x0000ffff - 0x0000ffff (0x1) IX[B]
+	[6] -1 0	0x00000000 - 0x000000ff (0x100) IX[B]
+(II) All system resource ranges:
+	[0] -1 0	0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+	[1] -1 0	0x00100000 - 0x3fffffff (0x3ff00000) MX[B]E(B)
+	[2] -1 0	0x000f0000 - 0x000fffff (0x10000) MX[B]
+	[3] -1 0	0x000c0000 - 0x000effff (0x30000) MX[B]
+	[4] -1 0	0x00000000 - 0x0009ffff (0xa0000) MX[B]
+	[5] -1 0	0xe0000000 - 0xefffffff (0x10000000) MX[B]
+	[6] -1 0	0xfe000000 - 0xfeffffff (0x1000000) MX[B](B)
+	[7] -1 0	0x0000ffff - 0x0000ffff (0x1) IX[B]
+	[8] -1 0	0x00000000 - 0x000000ff (0x100) IX[B]
+	[9] -1 0	0x0000ff80 - 0x0000ff9f (0x20) IX[B]
+	[10] -1 0	0x0000ffe0 - 0x0000ffff (0x20) IX[B]
+	[11] -1 0	0x00001000 - 0x0000100f (0x10) IX[B]
+(II) LoadModule: "chips"
+(II) Loading /usr/X11R6/lib/modules/drivers/chips_drv.o
+(II) Module chips: vendor="The XFree86 Project"
+	compiled for 4.1.0, module version = 1.0.0
+	Module class: XFree86 Video Driver
+	ABI class: XFree86 Video Driver, version 0.4
+(II) LoadModule: "mouse"
+(II) Loading /usr/X11R6/lib/modules/input/mouse_drv.o
+(II) Module mouse: vendor="The XFree86 Project"
+	compiled for 4.1.0, module version = 1.0.0
+	Module class: XFree86 XInput Driver
+	ABI class: XFree86 XInput driver, version 0.2
+(II) CHIPS: Driver for Chips and Technologies chipsets: ct65520, ct65525,
+	ct65530, ct65535, ct65540, ct65545, ct65546, ct65548, ct65550,
+	ct65554, ct65555, ct68554, ct69000, ct69030, ct64200, ct64300
+(II) Primary Device is: PCI 00:04:0
+(--) Assigning device section with no busID to primary device
+(--) Chipset ct65555 found
+(II) resource ranges after xf86ClaimFixedResources() call:
+	[0] -1 0	0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+	[1] -1 0	0x00100000 - 0x3fffffff (0x3ff00000) MX[B]E(B)
+	[2] -1 0	0x000f0000 - 0x000fffff (0x10000) MX[B]
+	[3] -1 0	0x000c0000 - 0x000effff (0x30000) MX[B]
+	[4] -1 0	0x00000000 - 0x0009ffff (0xa0000) MX[B]
+	[5] -1 0	0xe0000000 - 0xefffffff (0x10000000) MX[B]
+	[6] -1 0	0xfe000000 - 0xfeffffff (0x1000000) MX[B](B)
+	[7] -1 0	0x0000ffff - 0x0000ffff (0x1) IX[B]
+	[8] -1 0	0x00000000 - 0x000000ff (0x100) IX[B]
+	[9] -1 0	0x0000ff80 - 0x0000ff9f (0x20) IX[B]
+	[10] -1 0	0x0000ffe0 - 0x0000ffff (0x20) IX[B]
+	[11] -1 0	0x00001000 - 0x0000100f (0x10) IX[B]
+(II) resource ranges after probing:
+	[0] -1 0	0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+	[1] -1 0	0x00100000 - 0x3fffffff (0x3ff00000) MX[B]E(B)
+	[2] -1 0	0x000f0000 - 0x000fffff (0x10000) MX[B]
+	[3] -1 0	0x000c0000 - 0x000effff (0x30000) MX[B]
+	[4] -1 0	0x00000000 - 0x0009ffff (0xa0000) MX[B]
+	[5] -1 0	0xe0000000 - 0xefffffff (0x10000000) MX[B]
+	[6] -1 0	0xfe000000 - 0xfeffffff (0x1000000) MX[B](B)
+	[7] 0 0	0x000a0000 - 0x000affff (0x10000) MS[B]
+	[8] 0 0	0x000b0000 - 0x000b7fff (0x8000) MS[B]
+	[9] 0 0	0x000b8000 - 0x000bffff (0x8000) MS[B]
+	[10] -1 0	0x0000ffff - 0x0000ffff (0x1) IX[B]
+	[11] -1 0	0x00000000 - 0x000000ff (0x100) IX[B]
+	[12] -1 0	0x0000ff80 - 0x0000ff9f (0x20) IX[B]
+	[13] -1 0	0x0000ffe0 - 0x0000ffff (0x20) IX[B]
+	[14] -1 0	0x00001000 - 0x0000100f (0x10) IX[B]
+	[15] 0 0	0x000003b0 - 0x000003bb (0xc) IS[B]
+	[16] 0 0	0x000003c0 - 0x000003df (0x20) IS[B]
+(II) Setting vga for screen 0.
+(II) Loading sub module "vgahw"
+(II) LoadModule: "vgahw"
+(II) Loading /usr/X11R6/lib/modules/libvgahw.a
+(II) Module vgahw: vendor="The XFree86 Project"
+	compiled for 4.1.0, module version = 0.1.0
+	ABI class: XFree86 Video Driver, version 0.4
+(II) Loading sub module "vbe"
+(II) LoadModule: "vbe"
+(II) Loading /usr/X11R6/lib/modules/libvbe.a
+(II) Module vbe: vendor="The XFree86 Project"
+	compiled for 4.1.0, module version = 1.0.0
+	ABI class: XFree86 Video Driver, version 0.4
+(II) Loading sub module "int10"
+(II) LoadModule: "int10"
+(II) Loading /usr/X11R6/lib/modules/linux/libint10.a
+(II) Module int10: vendor="The XFree86 Project"
+	compiled for 4.1.0, module version = 1.0.0
+	ABI class: XFree86 Video Driver, version 0.4
+(II) CHIPS(0): initializing int10
+(II) CHIPS(0): Primary V_BIOS segment is: 0xc000
+(II) CHIPS(0): VESA BIOS detected
+(II) CHIPS(0): VESA VBE Version 2.0
+(II) CHIPS(0): VESA VBE Total Mem: 2048 kB
+(II) CHIPS(0): VESA VBE OEM: CHIPS 6x555 Super VGA
+(II) CHIPS(0): VESA VBE OEM Software Rev: 1.0
+(II) CHIPS(0): VESA VBE OEM Vendor: Chips & Technologies, Inc.
+(II) CHIPS(0): VESA VBE OEM Product: 6x555 Display Controller
+(II) CHIPS(0): VESA VBE OEM Product Rev: 2
+(**) CHIPS(0): Depth 24, (--) framebuffer bpp 24
+(==) CHIPS(0): RGB weight 888
+(==) CHIPS(0): Default visual is TrueColor
+(==) CHIPS(0): Using gamma correction (1.0, 1.0, 1.0)
+(**) CHIPS(0): Option "STN"
+(**) CHIPS(0): Option "NoStretch"
+(**) CHIPS(0): Option "LcdCenter"
+(==) CHIPS(0): Using HW cursor
+(**) CHIPS(0): Enabling linear addressing
+(--) CHIPS(0): base address is set at 0xFE000000.
+(**) CHIPS(0): Using MMIO
+(--) CHIPS(0): VideoRAM: 2048 kByte
+(--) CHIPS(0): DD-STN probed
+(--) CHIPS(0): LCD
+(--) CHIPS(0): Display Size: x=800; y=600
+(--) CHIPS(0): Frame Buffer used
+(--) CHIPS(0): Using embedded Frame Buffer, size 96000 bytes
+(--) CHIPS(0): Frame accelerator enabled
+(--) CHIPS(0): PCI Bus
+(--) CHIPS(0): Internal DAC disabled
+(--) CHIPS(0): Using programmable clocks
+(--) CHIPS(0): Dot clock 0:  25.172 MHz
+(--) CHIPS(0): Dot clock 1:  28.325 MHz
+(--) CHIPS(0): Dot clock 2:  40.090 MHz FPclk CRTclk
+(--) CHIPS(0): Probed memory clock of  50.113 MHz
+(==) CHIPS(0): Min pixel clock is  11.000 MHz
+(**) CHIPS(0): User max pixel clock of 110.000 MHz overrides  35.079 MHz limit
+(II) Loading sub module "ddc"
+(II) LoadModule: "ddc"
+(II) Loading /usr/X11R6/lib/modules/libddc.a
+(II) Module ddc: vendor="The XFree86 Project"
+	compiled for 4.1.0, module version = 1.0.0
+	ABI class: XFree86 Video Driver, version 0.4
+(II) Loading sub module "ddc"
+(II) LoadModule: "ddc"
+(II) Reloading /usr/X11R6/lib/modules/libddc.a
+(II) CHIPS(0): VESA VBE DDC supported
+(II) CHIPS(0): VESA VBE DDC Level 2
+(II) CHIPS(0): VESA VBE DDC transfer in appr. 1 sec.
+(II) CHIPS(0): VESA VBE DDC read successfully
+(II) CHIPS(0): Manufacturer: TOS  Model: 5081  Serial#: 0
+(II) CHIPS(0): Year: 1995  Week: 20
+(II) CHIPS(0): EDID Version: 1.0
+(II) CHIPS(0): Digital Display Input
+(II) CHIPS(0): Max H-Image Size [cm]: horiz.: 23  vert.: 17
+(II) CHIPS(0): Gamma: 1.00
+(II) CHIPS(0): No DPMS capabilities specified; RGB/Color Display
+(II) CHIPS(0): redX: 0.000 redY: 0.000   greenX: 0.000 greenY: 0.000
+(II) CHIPS(0): blueX: 0.000 blueY: 0.000   whiteX: 0.000 whiteY: 0.000
+(II) CHIPS(0): Supported VESA Video Modes:
+(II) CHIPS(0): 640x480@60Hz
+(II) CHIPS(0): 800x600@60Hz
+(II) CHIPS(0): Manufacturer's mask: 0
+(II) CHIPS(0): Monitor0: Using hsync range of 10.00-100.00 kHz
+(WW) CHIPS(0): Monitor0: using default vrefresh range of 43-72Hz
+(II) CHIPS(0): Clock range:  11.00 to 110.00 MHz
+(II) CHIPS(0): Not using default mode "640x350" (vrefresh out of range)
+(II) CHIPS(0): Not using default mode "640x400" (vrefresh out of range)
+(II) CHIPS(0): Not using default mode "720x400" (vrefresh out of range)
+(II) CHIPS(0): Not using default mode "640x480" (vrefresh out of range)
+(II) CHIPS(0): Not using default mode "640x480" (vrefresh out of range)
+(II) CHIPS(0): Not using default mode "640x480" (vrefresh out of range)
+(II) CHIPS(0): Not using default mode "800x600" (vrefresh out of range)
+(II) CHIPS(0): Not using default mode "800x600" (vrefresh out of range)
+(II) CHIPS(0): Not using default mode "1024x768" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1024x768" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1024x768" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1024x768" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1024x768" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1152x864" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1280x960" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1280x960" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1280x1024" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1280x1024" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1280x1024" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1600x1200" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1600x1200" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1600x1200" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1600x1200" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1600x1200" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1792x1344" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1792x1344" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1856x1392" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1856x1392" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1920x1440" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1920x1440" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1400x1050" (insufficient memory for mode)
+(II) CHIPS(0): Not using default mode "1400x1050" (insufficient memory for mode)
+(--) CHIPS(0): Virtual size is 800x600 (pitch 800)
+(**) CHIPS(0): Default mode "800x600": 50.0 MHz, 48.1 kHz, 72.2 Hz
+(II) CHIPS(0): Modeline "800x600"   50.00  800 856 976 1040  600 637 643 666 +hsync +vsync
+(--) CHIPS(0): Display dimensions: (23, 17) cm
+(--) CHIPS(0): DPI set to (88, 89)
+(II) Loading sub module "fb"
+(II) LoadModule: "fb"
+(II) Loading /usr/X11R6/lib/modules/libfb.a
+(II) Module fb: vendor="The XFree86 Project"
+	compiled for 4.1.0, module version = 1.0.0
+	ABI class: XFree86 ANSI C Emulation, version 0.1
+(II) Loading sub module "xaa"
+(II) LoadModule: "xaa"
+(II) Loading /usr/X11R6/lib/modules/libxaa.a
+(II) Module xaa: vendor="The XFree86 Project"
+	compiled for 4.1.0, module version = 1.0.0
+	ABI class: XFree86 Video Driver, version 0.4
+(II) Loading sub module "ramdac"
+(II) LoadModule: "ramdac"
+(II) Loading /usr/X11R6/lib/modules/libramdac.a
+(II) Module ramdac: vendor="The XFree86 Project"
+	compiled for 4.1.0, module version = 0.1.0
+	ABI class: XFree86 Video Driver, version 0.4
+(==) Depth 24 pixmap format is 32 bpp
+(II) do I need RAC?  No, I don't.
+(II) resource ranges after preInit:
+	[0] 0 0	0xfe000000 - 0xfeffffff (0x1000000) MS[B]
+	[1] -1 0	0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+	[2] -1 0	0x00100000 - 0x3fffffff (0x3ff00000) MX[B]E(B)
+	[3] -1 0	0x000f0000 - 0x000fffff (0x10000) MX[B]
+	[4] -1 0	0x000c0000 - 0x000effff (0x30000) MX[B]
+	[5] -1 0	0x00000000 - 0x0009ffff (0xa0000) MX[B]
+	[6] -1 0	0xe0000000 - 0xefffffff (0x10000000) MX[B]
+	[7] -1 0	0xfe000000 - 0xfeffffff (0x1000000) MX[B](B)
+	[8] 0 0	0x000a0000 - 0x000affff (0x10000) MS[B](OprD)
+	[9] 0 0	0x000b0000 - 0x000b7fff (0x8000) MS[B](OprD)
+	[10] 0 0	0x000b8000 - 0x000bffff (0x8000) MS[B](OprD)
+	[11] -1 0	0x0000ffff - 0x0000ffff (0x1) IX[B]
+	[12] -1 0	0x00000000 - 0x000000ff (0x100) IX[B]
+	[13] -1 0	0x0000ff80 - 0x0000ff9f (0x20) IX[B]
+	[14] -1 0	0x0000ffe0 - 0x0000ffff (0x20) IX[B]
+	[15] -1 0	0x00001000 - 0x0000100f (0x10) IX[B]
+	[16] 0 0	0x000003b0 - 0x000003bb (0xc) IS[B]
+	[17] 0 0	0x000003c0 - 0x000003df (0x20) IS[B]

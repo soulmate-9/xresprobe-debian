@@ -1,0 +1,23 @@
+Source: xresprobe
+Section: x11
+Priority: optional
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Uploaders: Otavio Salvador <otavio@debian.org>, David Nusinow <dnusinow@debian.org>
+Build-Depends: debhelper (>= 4.0.0), cdbs
+Standards-Version: 3.6.1.0
+
+Package: xresprobe
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: laptop-detect
+Replaces: kudzu-vesa
+Conflicts: kudzu-vesa
+Provides: kudzu-vesa
+Description: X Resolution Probe
+ xresprobe is a package that probes both laptop and DDC-compliant screens for
+ their standard resolutions, and returns a specifically-formatted, easy-to-parse
+ output.
+ .
+ It contains the 'ddcprobe' package, which performs a DDC probe to the monitor;
+ however, ddcprobe only works on i386 and powerpc. The laptop detection routines
+ are, however, sufficiently generic to to be useful to other architectures.

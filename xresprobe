@@ -1,0 +1,170 @@
+#!/bin/sh
+# Usage: xresprobe driver [screentype]
+# Copyright (C) 2004 Canonical Ltd
+# Author: Daniel Stone <daniel.stone@ubuntu.com>
+# 
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; version 2 of the License.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License with
+#  the Debian GNU/Linux distribution in file /usr/share/common-licenses/GPL-2;
+#  if not, write to the Free Software Foundation, Inc., 59 Temple Place,
+#  Suite 330, Boston, MA  02111-1307  USA
+#
+# On Debian systems, the complete text of the GNU General Public
+# License, version 2, can be found in /usr/share/common-licenses/GPL-2.
+
+DATADIR="/usr/share/xresprobe"
+
+DRIVER="$1"
+SCREENTYPE="$2"
+RETCODE=0
+
+if [ -z "$DRIVER" ]; then
+  echo "Driver must be specified."
+  exit 1
+fi
+
+if [ -n "$SCREENTYPE" ]; then
+  if [ "$SCREENTYPE" = "laptop" ]; then
+    LAPTOP="yes"
+  elif [ "$SCREENTYPE" = "crt" ]; then
+    DDC="yes"
+  elif [ "$SCREENTYPE" = "lcd" ]; then
+    DDC="yes"
+  fi
+else
+  if which laptop-detect >/dev/null 2>&1; then
+    if laptop-detect >/dev/null 2>&1; then
+      LAPTOP="yes"
+    else
+      DDC="yes"
+    fi
+  else
+    echo "laptop-detect must be installed for xresprobe to work properly. If"
+    echo "you really want to continue without it, call xresprobe like:"
+    echo "$0 drivername [laptop|crt|lcd]"
+    echo
+    echo "Note that laptop LCDs are different from standard desktop LCDs, so"
+    echo "be careful how you call it."
+  fi
+fi
+
+if [ -n "$XRESPROBE_DEBUG" ]; then
+  echo "laptop: $LAPTOP; ddc: $DDC" >&2
+fi
+
+if [ -n "$XRESPROBE_RIG" ]; then
+  if [ -n "$XRESPROBE_DEBUG" ]; then
+    echo "xresprobe: rigging results for $XRESPROBE_RIG" >&2
+  fi
+  exec "$DATADIR/rigprobe.sh" $DRIVER $SCREENTYPE $LAPTOP
+fi
+
+doddc() {
+  if [ -n "$XRESPROBE_DEBUG" ]; then
+    echo "attempting DDC detection" >&2
+  fi
+  DDCOUT="$("$DATADIR/ddcprobe.sh")"
+  RETCODE="$?"
+  RES="$(echo "$DDCOUT" | grep "^res:" | sed -e 's/^res: *//;')"
+  IDENTIFIER="$(echo "$DDCOUT" | grep "^name:" | sed -e 's/^name: *//;')"
+  FREQ="$(echo "$DDCOUT" | grep "^freq:" | sed -e 's/^freq: *//;')"
+  DISPTYPE="$(echo "$DDCOUT" | grep "^disptype:" | sed -e 's/^disptype: *//;')"
+
+  # well, not necessarily, but it's a pretty good guess
+  if [ -n "$DISPTYPE" ] && [ "$DISPTYPE" = "lcd" ]; then
+    DISPTYPE="lcd/tmds"
+  fi
+}
+
+forkx() {
+  if [ -z "$FORKEDX" ]; then
+    if [ -n "$XRESPROBE_DEBUG" ]; then
+      echo "forking Xorg" >&2
+    fi
+    XPROBEDIR="$("$DATADIR/xprobe.sh" "$DRIVER")"
+    RETCODE="$?"
+    LOGFILE="$XPROBEDIR/xorg.log"
+    FORKEDX="yes"
+  else
+    if [ -n "$XRESPROBE_DEBUG" ]; then
+      echo "X has already been forked; not reforking" >&2
+    fi
+  fi
+}
+
+cleanx() {
+  if [ -n "$FORKEDX" ]; then
+    if [ -n "$XRESPROBE_DEBUG" ]; then
+      echo "not removing temporary xprobe directory $XPROBEDIR; please do this \
+            by hand" >&2
+    else
+      rm -rf "$XPROBEDIR"
+    fi
+    FORKEDX=""
+  else
+    if [ -n "$XRESPROBE_DEBUG" ]; then
+      echo "not cleaning up after Xorg; not forked" >&2
+    fi
+  fi
+}
+
+doprobe() {
+  if [ -n "$XRESPROBE_DEBUG" ]; then
+    echo "attempting an X probe" >&2
+  fi
+  forkx
+  RES="$("$DATADIR/lcdsize.sh" $DRIVER $LOGFILE)"
+}
+
+dodepthcheck() {
+  if [ -n "$XRESPROBE_DEBUG" ]; then
+    echo "checking for broken i8xx BIOS with no 24bpp modes" >&2
+  fi
+  forkx
+  FORCEDEPTH="$("$DATADIR/bitdepth.sh" $DRIVER $LOGFILE)"
+}
+
+if [ "$DRIVER" = "i810" ]; then
+  dodepthcheck
+fi
+
+if [ "x$LAPTOP" = "xyes" ]; then
+  if [ "$(uname -m)" = "ppc" ] || [ "$(uname -m)" = "ppc64" ]; then
+    doddc
+  fi
+  if [ -z "$RES" ]; then
+    doprobe
+  fi
+  DISPTYPE="lcd/lvds"
+elif [ "x$DDC" = "xyes" ]; then
+  doddc
+fi
+
+if [ -n "$XRESPROBE_DEBUG" ]; then
+  echo "id: $IDENTIFIER" >&2
+  echo "res: $RES" >&2
+  echo "freq: $FREQ" >&2
+  echo "disptype: $DISPTYPE" >&2
+  if [ -n "$FORCEDEPTH" ]; then
+    echo "depth: $FORCEDEPTH" >&2
+  fi
+fi
+
+echo "id: $IDENTIFIER"
+echo "res: $RES"
+echo "freq: $FREQ"
+echo "disptype: $DISPTYPE"
+if [ -n "$FORCEDEPTH" ]; then
+  echo "depth: $FORCEDEPTH"
+fi
+
+cleanx
+exit $RETCODE

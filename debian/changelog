@@ -1,0 +1,76 @@
+xresprobe (0.4.23debian1) unstable; urgency=low
+
+  * New release based in 0.4.23 release of Ubuntu.
+    - Fixed FTBFS bug (closes: #358334)
+  * Fix bashism on xresprobe script (closes: #318215)
+  * Stop to install Ubuntu changelog since we're using the same changelog
+    file right now.
+
+ -- Otavio Salvador <otavio@debian.org>  Sat,  8 Apr 2006 11:00:30 -0300
+
+xresprobe (0.4.23) dapper; urgency=low
+
+  * Fix vbe_get_vbe_info in stub.c to match the declaration.
+
+ -- LaMont Jones <lamont@ubuntu.com>  Wed, 22 Mar 2006 16:11:56 -0700
+
+xresprobe (0.4.22-1) unstable; urgency=low
+
+  * New upstream release
+  * Add myself to uploaders, since octavio didn't grab this after a month
+
+ -- David Nusinow <dnusinow@debian.org>  Tue, 21 Mar 2006 22:03:54 -0500
+
+xresprobe (0.4.22) dapper; urgency=low
+
+  * More AMD64 support.  Reset the stack pointer on each call to LRMI_int
+    (unless overridden in regs).  Without this, the second call to
+    LRMI_int will always fail due to the stack size being too small.
+
+ -- Tollef Fog Heen <tfheen@ubuntu.com>  Mon, 20 Feb 2006 13:55:47 +0100
+
+xresprobe (0.4.21) dapper; urgency=low
+
+  * Add support for amd64.  Take the thunking/x86emu parts from vbetool
+    and reuse them here.  Great and many thanks go to both Matthew Garrett
+    and the people who wrote x86emu.
+
+ -- Tollef Fog Heen <tfheen@ubuntu.com>  Mon, 13 Feb 2006 14:42:03 +0100
+
+xresprobe (0.4.20) dapper; urgency=low
+
+  * Call Xorg explicitly, instead of guessing through the symlink.
+  * ddcprobe: Dump the EDID for debugging purposes.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Tue, 25 Oct 2005 19:27:17 +1000
+
+xresprobe (0.4.19) breezy; urgency=low
+
+  * Apply Debian patch to fix CRT/LCD regexp in ddcprobe.sh (closes: #328551).
+  * Remap 1408x1050 to 1400x1050 by force on savages.  Yes, I know this is a
+    horror freak show (closes: Ubuntu#15231).
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Fri, 16 Sep 2005 17:36:42 +1000
+
+xresprobe (0.4.18-1) unstable; urgency=low
+
+  * New upstream release.
+    - FTBFS: missing stubs on several architectures. Closes: #309491;
+
+ -- Otavio Salvador <otavio@debian.org>  Wed, 18 May 2005 00:43:19 -0300
+
+xresprobe (0.4.16-1) unstable; urgency=low
+
+  * Initial version for Debian.
+  * Replace kudzu-vesa and then allow upgrades from woody.
+  * Use simple-patch support of CDBS build system to apply patches in
+    build time to fix issues while these patches weren't include by
+    upstream.
+  * debian/patches/10_gcc_2.95_fixes.diff: Added, while we were working on
+    0.4.14, to fix some compilation issues Petter Reinholdtsen
+    <pere@hungry.com> for the patch.
+  * debian/patches/10_gcc_2.95_fixes.diff: Droped since was merged on
+    0.4.16 upstream release.
+  
+ -- Otavio Salvador <otavio@debian.org>  Mon,  4 Apr 2005 11:15:24 -0300
+

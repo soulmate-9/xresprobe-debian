@@ -1,0 +1,1256 @@
+
+This is a pre-release version of XFree86, and is not supported in any
+way.  Bugs may be reported to XFree86@XFree86.Org and patches submitted
+to fixes@XFree86.Org.  Before reporting bugs in pre-release versions,
+please check the latest version in the XFree86 CVS repository
+(http://www.XFree86.Org/cvs).
+
+XFree86 Version 4.3.0.1 (Ubuntu 4.3.0.dfsg.1-5ubuntu1 20040629130816 root@rockhopper.warthogs.hbd.com)
+Release Date: 15 August 2003
+X Protocol Version 11, Revision 0, Release 6.6
+Build Operating System: Linux 2.4.26-es i686 [ELF] 
+Build Date: 29 June 2004
+	Before reporting problems, check http://www.XFree86.Org/
+	to make sure that you have the latest version.
+Module Loader present
+OS Kernel: Linux version 2.6.7 (daniels@catsby) (gcc version 3.3.4 (Debian 1:3.3.4-3)) #1 Sun Jul 25 14:54:18 EDT 2004 T
+Markers: (--) probed, (**) from config file, (==) default setting,
+         (++) from command line, (!!) notice, (II) informational,
+         (WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/XFree86.0.log", Time: Mon Jul 26 20:18:03 2004
+(==) Using config file: "/etc/X11/XF86Config-4"
+(==) ServerLayout "Default Layout"
+(**) |-->Screen "Default Screen" (0)
+(**) |   |-->Monitor "Generic Monitor"
+(**) |   |-->Device "ATI Mach64 AGP"
+(**) |-->Input Device "Generic Keyboard"
+(**) Option "XkbRules" "xfree86"
+(**) XKB: rules: "xfree86"
+(**) Option "XkbModel" "pc104"
+(**) XKB: model: "pc104"
+(**) Option "XkbLayout" "us"
+(**) XKB: layout: "us"
+(==) Keyboard: CustomKeycode disabled
+(**) |-->Input Device "Synaptics Mouse"
+(WW) The directory "/usr/lib/X11/fonts/cyrillic" does not exist.
+	Entry deleted from font path.
+(WW) The directory "/usr/lib/X11/fonts/CID" does not exist.
+	Entry deleted from font path.
+(**) FontPath set to "unix/:7100,/usr/lib/X11/fonts/misc,/usr/lib/X11/fonts/100dpi/:unscaled,/usr/lib/X11/fonts/75dpi/:unscaled,/usr/lib/X11/fonts/Type1,/usr/lib/X11/fonts/Speedo,/usr/lib/X11/fonts/100dpi,/usr/lib/X11/fonts/75dpi"
+(==) RgbPath set to "/usr/X11R6/lib/X11/rgb"
+(==) ModulePath set to "/usr/X11R6/lib/modules"
+(++) using VT number 7
+
+(WW) Open APM failed (/dev/apm_bios) (No such file or directory)
+(II) Module ABI versions:
+	XFree86 ANSI C Emulation: 0.2
+	XFree86 Video Driver: 0.6
+	XFree86 XInput driver : 0.4
+	XFree86 Server Extension : 0.2
+	XFree86 Font Renderer : 0.4
+(II) Loader running on linux
+(II) LoadModule: "bitmap"
+(II) Loading /usr/X11R6/lib/modules/fonts/libbitmap.a
+(II) Module bitmap: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.0.0
+	Module class: XFree86 Font Renderer
+	ABI class: XFree86 Font Renderer, version 0.4
+(II) Loading font Bitmap
+(II) LoadModule: "pcidata"
+(II) Loading /usr/X11R6/lib/modules/libpcidata.a
+(II) Module pcidata: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.0.0
+	ABI class: XFree86 Video Driver, version 0.6
+(II) PCI: Probing config type using method 1
+(II) PCI: Config type is 1
+(II) PCI: stages = 0x03, oldVal1 = 0x00000000, mode1Res1 = 0x80000000
+(II) PCI: PCI scan (all values are in hex)
+(II) PCI: 00:00:0: chip 8086,7190 card 0000,0000 rev 03 class 06,00,00 hdr 00
+(II) PCI: 00:01:0: chip 8086,7191 card 0000,0000 rev 03 class 06,04,00 hdr 01
+(II) PCI: 00:07:0: chip 8086,7110 card 0000,0000 rev 02 class 06,80,00 hdr 80
+(II) PCI: 00:07:1: chip 8086,7111 card 0000,0000 rev 01 class 01,01,80 hdr 00
+(II) PCI: 00:07:2: chip 8086,7112 card 0000,0000 rev 01 class 0c,03,00 hdr 00
+(II) PCI: 00:07:3: chip 8086,7113 card 0000,0000 rev 03 class 06,80,00 hdr 00
+(II) PCI: 00:0a:0: chip 104c,ac51 card 4000,0000 rev 00 class 06,07,00 hdr 82
+(II) PCI: 00:0a:1: chip 104c,ac51 card 4800,0000 rev 00 class 06,07,00 hdr 82
+(II) PCI: 00:0b:0: chip 10b7,6055 card 10b7,6256 rev 10 class 02,00,00 hdr 80
+(II) PCI: 00:0b:1: chip 10b7,1007 card 10b7,6158 rev 10 class 07,80,00 hdr 00
+(II) PCI: 00:0d:0: chip 125d,1998 card 103c,0010 rev 00 class 04,01,00 hdr 00
+(II) PCI: 01:00:0: chip 1002,4c4d card 103c,0010 rev 64 class 03,00,00 hdr 00
+(II) PCI: 02:00:0: chip 14e4,4320 card 1799,7010 rev 03 class 02,80,00 hdr 00
+(II) PCI: End of PCI scan
+(II) Host-to-PCI bridge:
+(II) Bus 0: bridge is at (0:0:0), (0,0,6), BCTRL: 0x0008 (VGA_EN is set)
+(II) Bus 0 I/O range:
+	[0] -1	0	0x00000000 - 0x0000ffff (0x10000) IX[B]
+(II) Bus 0 non-prefetchable memory range:
+	[0] -1	0	0x00000000 - 0xffffffff (0x0) MX[B]
+(II) Bus 0 prefetchable memory range:
+	[0] -1	0	0x00000000 - 0xffffffff (0x0) MX[B]
+(II) PCI-to-PCI bridge:
+(II) Bus 1: bridge is at (0:1:0), (0,1,1), BCTRL: 0x008c (VGA_EN is set)
+(II) Bus 1 I/O range:
+	[0] -1	0	0x00009000 - 0x000090ff (0x100) IX[B]
+	[1] -1	0	0x00009400 - 0x000094ff (0x100) IX[B]
+	[2] -1	0	0x00009800 - 0x000098ff (0x100) IX[B]
+	[3] -1	0	0x00009c00 - 0x00009cff (0x100) IX[B]
+(II) Bus 1 non-prefetchable memory range:
+	[0] -1	0	0xf4100000 - 0xf5ffffff (0x1f00000) MX[B]
+(II) PCI-to-CardBus bridge:
+(II) Bus 2: bridge is at (0:10:0), (0,2,5), BCTRL: 0x0500 (VGA_EN is cleared)
+(II) Bus 2 I/O range:
+	[0] -1	0	0x00004000 - 0x000040ff (0x100) IX[B]
+	[1] -1	0	0x00004400 - 0x000044ff (0x100) IX[B]
+(II) Bus 2 non-prefetchable memory range:
+	[0] -1	0	0x10800000 - 0x10bfffff (0x400000) MX[B]
+(II) Bus 2 prefetchable memory range:
+	[0] -1	0	0x10400000 - 0x107fffff (0x400000) MX[B]
+(II) PCI-to-CardBus bridge:
+(II) Bus 6: bridge is at (0:10:1), (0,6,9), BCTRL: 0x05c0 (VGA_EN is cleared)
+(II) Bus 6 I/O range:
+	[0] -1	0	0x00004800 - 0x000048ff (0x100) IX[B]
+	[1] -1	0	0x00004c00 - 0x00004cff (0x100) IX[B]
+(II) Bus 6 non-prefetchable memory range:
+	[0] -1	0	0x11000000 - 0x113fffff (0x400000) MX[B]
+(II) Bus 6 prefetchable memory range:
+	[0] -1	0	0x10c00000 - 0x10ffffff (0x400000) MX[B]
+(--) PCI:*(1:0:0) ATI Technologies Inc Rage Mobility P/M AGP 2x rev 100, Mem @ 0xf5000000/24, 0xf4100000/12, I/O @ 0x9000/8
+(II) Addressable bus resource ranges are
+	[0] -1	0	0x00000000 - 0xffffffff (0x0) MX[B]
+	[1] -1	0	0x00000000 - 0x0000ffff (0x10000) IX[B]
+(II) OS-reported resource ranges:
+	[0] -1	0	0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+	[1] -1	0	0x00100000 - 0x3fffffff (0x3ff00000) MX[B]E(B)
+	[2] -1	0	0x000f0000 - 0x000fffff (0x10000) MX[B]
+	[3] -1	0	0x000c0000 - 0x000effff (0x30000) MX[B]
+	[4] -1	0	0x00000000 - 0x0009ffff (0xa0000) MX[B]
+	[5] -1	0	0x0000ffff - 0x0000ffff (0x1) IX[B]
+	[6] -1	0	0x00000000 - 0x000000ff (0x100) IX[B]
+(II) PCI Memory resource overlap reduced 0xf8000000 from 0xfbffffff to 0xf7ffffff
+(II) Active PCI resource ranges:
+	[0] -1	0	0x10800000 - 0x10801fff (0x2000) MX[B]
+	[1] -1	0	0xf4000000 - 0xf4001fff (0x2000) MX[B]
+	[2] -1	0	0xf4002800 - 0xf400287f (0x80) MX[B]
+	[3] -1	0	0xf4002c00 - 0xf4002cff (0x100) MX[B]
+	[4] -1	0	0xf4002000 - 0xf400207f (0x80) MX[B]
+	[5] -1	0	0xf4002400 - 0xf400247f (0x80) MX[B]
+	[6] -1	0	0xf8000000 - 0xf7ffffff (0x0) MX[B]O
+	[7] -1	0	0xf4100000 - 0xf4100fff (0x1000) MX[B](B)
+	[8] -1	0	0xf5000000 - 0xf5ffffff (0x1000000) MX[B](B)
+	[9] -1	0	0x00001400 - 0x000014ff (0x100) IX[B]
+	[10] -1	0	0x00001000 - 0x000010ff (0x100) IX[B]
+	[11] -1	0	0x00001800 - 0x0000187f (0x80) IX[B]
+	[12] -1	0	0x00001880 - 0x0000189f (0x20) IX[B]
+	[13] -1	0	0x000018a0 - 0x000018af (0x10) IX[B]
+	[14] -1	0	0x00009000 - 0x000090ff (0x100) IX[B](B)
+(II) Active PCI resource ranges after removing overlaps:
+	[0] -1	0	0x10800000 - 0x10801fff (0x2000) MX[B]
+	[1] -1	0	0xf4000000 - 0xf4001fff (0x2000) MX[B]
+	[2] -1	0	0xf4002800 - 0xf400287f (0x80) MX[B]
+	[3] -1	0	0xf4002c00 - 0xf4002cff (0x100) MX[B]
+	[4] -1	0	0xf4002000 - 0xf400207f (0x80) MX[B]
+	[5] -1	0	0xf4002400 - 0xf400247f (0x80) MX[B]
+	[6] -1	0	0xf8000000 - 0xf7ffffff (0x0) MX[B]O
+	[7] -1	0	0xf4100000 - 0xf4100fff (0x1000) MX[B](B)
+	[8] -1	0	0xf5000000 - 0xf5ffffff (0x1000000) MX[B](B)
+	[9] -1	0	0x00001400 - 0x000014ff (0x100) IX[B]
+	[10] -1	0	0x00001000 - 0x000010ff (0x100) IX[B]
+	[11] -1	0	0x00001800 - 0x0000187f (0x80) IX[B]
+	[12] -1	0	0x00001880 - 0x0000189f (0x20) IX[B]
+	[13] -1	0	0x000018a0 - 0x000018af (0x10) IX[B]
+	[14] -1	0	0x00009000 - 0x000090ff (0x100) IX[B](B)
+(II) OS-reported resource ranges after removing overlaps with PCI:
+	[0] -1	0	0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+	[1] -1	0	0x00100000 - 0x107fffff (0x10700000) MX[B]E(B)
+	[2] -1	0	0x000f0000 - 0x000fffff (0x10000) MX[B]
+	[3] -1	0	0x000c0000 - 0x000effff (0x30000) MX[B]
+	[4] -1	0	0x00000000 - 0x0009ffff (0xa0000) MX[B]
+	[5] -1	0	0x0000ffff - 0x0000ffff (0x1) IX[B]
+	[6] -1	0	0x00000000 - 0x000000ff (0x100) IX[B]
+(II) All system resource ranges:
+	[0] -1	0	0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+	[1] -1	0	0x00100000 - 0x107fffff (0x10700000) MX[B]E(B)
+	[2] -1	0	0x000f0000 - 0x000fffff (0x10000) MX[B]
+	[3] -1	0	0x000c0000 - 0x000effff (0x30000) MX[B]
+	[4] -1	0	0x00000000 - 0x0009ffff (0xa0000) MX[B]
+	[5] -1	0	0x10800000 - 0x10801fff (0x2000) MX[B]
+	[6] -1	0	0xf4000000 - 0xf4001fff (0x2000) MX[B]
+	[7] -1	0	0xf4002800 - 0xf400287f (0x80) MX[B]
+	[8] -1	0	0xf4002c00 - 0xf4002cff (0x100) MX[B]
+	[9] -1	0	0xf4002000 - 0xf400207f (0x80) MX[B]
+	[10] -1	0	0xf4002400 - 0xf400247f (0x80) MX[B]
+	[11] -1	0	0xf8000000 - 0xf7ffffff (0x0) MX[B]O
+	[12] -1	0	0xf4100000 - 0xf4100fff (0x1000) MX[B](B)
+	[13] -1	0	0xf5000000 - 0xf5ffffff (0x1000000) MX[B](B)
+	[14] -1	0	0x0000ffff - 0x0000ffff (0x1) IX[B]
+	[15] -1	0	0x00000000 - 0x000000ff (0x100) IX[B]
+	[16] -1	0	0x00001400 - 0x000014ff (0x100) IX[B]
+	[17] -1	0	0x00001000 - 0x000010ff (0x100) IX[B]
+	[18] -1	0	0x00001800 - 0x0000187f (0x80) IX[B]
+	[19] -1	0	0x00001880 - 0x0000189f (0x20) IX[B]
+	[20] -1	0	0x000018a0 - 0x000018af (0x10) IX[B]
+	[21] -1	0	0x00009000 - 0x000090ff (0x100) IX[B](B)
+(II) LoadModule: "GLcore"
+(II) Loading /usr/X11R6/lib/modules/extensions/libGLcore.a
+Skipping "/usr/X11R6/lib/modules/extensions/libGLcore.a:m_debug_clip.o":  No symbols found
+Skipping "/usr/X11R6/lib/modules/extensions/libGLcore.a:m_debug_norm.o":  No symbols found
+Skipping "/usr/X11R6/lib/modules/extensions/libGLcore.a:m_debug_xform.o":  No symbols found
+Skipping "/usr/X11R6/lib/modules/extensions/libGLcore.a:m_debug_vertex.o":  No symbols found
+(II) Module GLcore: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.0.0
+	ABI class: XFree86 Server Extension, version 0.2
+(II) LoadModule: "bitmap"
+(II) Reloading /usr/X11R6/lib/modules/fonts/libbitmap.a
+(II) Loading font Bitmap
+(II) LoadModule: "dbe"
+(II) Loading /usr/X11R6/lib/modules/extensions/libdbe.a
+(II) Module dbe: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.0.0
+	Module class: XFree86 Server Extension
+	ABI class: XFree86 Server Extension, version 0.2
+(II) Loading extension DOUBLE-BUFFER
+(II) LoadModule: "ddc"
+(II) Loading /usr/X11R6/lib/modules/libddc.a
+(II) Module ddc: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.0.0
+	ABI class: XFree86 Video Driver, version 0.6
+(II) LoadModule: "dri"
+(II) Loading /usr/X11R6/lib/modules/extensions/libdri.a
+(II) Module dri: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.0.0
+	ABI class: XFree86 Server Extension, version 0.2
+(II) Loading sub module "drm"
+(II) LoadModule: "drm"
+(II) Loading /usr/X11R6/lib/modules/linux/libdrm.a
+(II) Module drm: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.0.0
+	ABI class: XFree86 Server Extension, version 0.2
+(II) Loading extension XFree86-DRI
+(II) LoadModule: "extmod"
+(II) Loading /usr/X11R6/lib/modules/extensions/libextmod.a
+(II) Module extmod: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.0.0
+	Module class: XFree86 Server Extension
+	ABI class: XFree86 Server Extension, version 0.2
+(II) Loading extension SHAPE
+(II) Loading extension MIT-SUNDRY-NONSTANDARD
+(II) Loading extension BIG-REQUESTS
+(II) Loading extension SYNC
+(II) Loading extension MIT-SCREEN-SAVER
+(II) Loading extension XC-MISC
+(II) Loading extension XFree86-VidModeExtension
+(II) Loading extension XFree86-Misc
+(II) Loading extension XFree86-DGA
+(II) Loading extension DPMS
+(II) Loading extension FontCache
+(II) Loading extension TOG-CUP
+(II) Loading extension Extended-Visual-Information
+(II) Loading extension XVideo
+(II) Loading extension XVideo-MotionCompensation
+(II) Loading extension X-Resource
+(II) LoadModule: "freetype"
+(II) Loading /usr/X11R6/lib/modules/fonts/libfreetype.a
+(II) Module freetype: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 2.0.2
+	Module class: XFree86 Font Renderer
+	ABI class: XFree86 Font Renderer, version 0.4
+(II) Loading font FreeType
+(II) LoadModule: "glx"
+(II) Loading /usr/X11R6/lib/modules/extensions/libglx.a
+(II) Module glx: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.0.0
+	ABI class: XFree86 Server Extension, version 0.2
+(II) Loading sub module "GLcore"
+(II) LoadModule: "GLcore"
+(II) Reloading /usr/X11R6/lib/modules/extensions/libGLcore.a
+(II) Loading extension GLX
+(II) LoadModule: "int10"
+(II) Loading /usr/X11R6/lib/modules/linux/libint10.a
+(II) Module int10: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.0.0
+	ABI class: XFree86 Video Driver, version 0.6
+(II) LoadModule: "record"
+(II) Loading /usr/X11R6/lib/modules/extensions/librecord.a
+(II) Module record: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.13.0
+	Module class: XFree86 Server Extension
+	ABI class: XFree86 Server Extension, version 0.2
+(II) Loading extension RECORD
+(II) LoadModule: "speedo"
+(II) Loading /usr/X11R6/lib/modules/fonts/libspeedo.a
+Skipping "/usr/X11R6/lib/modules/fonts/libspeedo.a:spencode.o":  No symbols found
+(II) Module speedo: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.0.1
+	Module class: XFree86 Font Renderer
+	ABI class: XFree86 Font Renderer, version 0.4
+(II) Loading font Speedo
+(II) LoadModule: "type1"
+(II) Loading /usr/X11R6/lib/modules/fonts/libtype1.a
+(II) Module type1: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.0.2
+	Module class: XFree86 Font Renderer
+	ABI class: XFree86 Font Renderer, version 0.4
+(II) Loading font Type1
+(II) Loading font CID
+(II) LoadModule: "vbe"
+(II) Loading /usr/X11R6/lib/modules/libvbe.a
+(II) Module vbe: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.1.0
+	ABI class: XFree86 Video Driver, version 0.6
+(II) LoadModule: "ati"
+(II) Loading /usr/X11R6/lib/modules/drivers/ati_drv.o
+(II) Module ati: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 6.5.5
+	Module class: XFree86 Video Driver
+	ABI class: XFree86 Video Driver, version 0.6
+(II) LoadModule: "synaptics"
+(II) Loading /usr/X11R6/lib/modules/input/synaptics_drv.o
+(II) Module synaptics: vendor="The XFree86 Project"
+	compiled for 4.2.0, module version = 1.0.0
+	Module class: XFree86 XInput Driver
+	ABI class: XFree86 XInput driver, version 0.3
+(II) ATI: ATI driver (version 6.5.5) for chipsets: ati, ativga
+(II) R128: Driver for ATI Rage 128 chipsets:
+	ATI Rage 128 Mobility M3 LE (PCI), ATI Rage 128 Mobility M3 LF (AGP),
+	ATI Rage 128 Mobility M4 MF (AGP), ATI Rage 128 Mobility M4 ML (AGP),
+	ATI Rage 128 Pro GL PA (AGP?), ATI Rage 128 Pro GL PB (AGP?),
+	ATI Rage 128 Pro GL PC (AGP?), ATI Rage 128 Pro GL PD (PCI),
+	ATI Rage 128 Pro GL PE (AGP?), ATI Rage 128 Pro GL PF (AGP),
+	ATI Rage 128 Pro VR PG (AGP?), ATI Rage 128 Pro VR PH (AGP?),
+	ATI Rage 128 Pro VR PI (AGP?), ATI Rage 128 Pro VR PJ (AGP?),
+	ATI Rage 128 Pro VR PK (AGP?), ATI Rage 128 Pro VR PL (AGP?),
+	ATI Rage 128 Pro VR PM (AGP?), ATI Rage 128 Pro VR PN (AGP?),
+	ATI Rage 128 Pro VR PO (AGP?), ATI Rage 128 Pro VR PP (PCI),
+	ATI Rage 128 Pro VR PQ (AGP?), ATI Rage 128 Pro VR PR (PCI),
+	ATI Rage 128 Pro VR PS (AGP?), ATI Rage 128 Pro VR PT (AGP?),
+	ATI Rage 128 Pro VR PU (AGP?), ATI Rage 128 Pro VR PV (AGP?),
+	ATI Rage 128 Pro VR PW (AGP?), ATI Rage 128 Pro VR PX (AGP?),
+	ATI Rage 128 GL RE (PCI), ATI Rage 128 GL RF (AGP),
+	ATI Rage 128 RG (AGP), ATI Rage 128 VR RK (PCI),
+	ATI Rage 128 VR RL (AGP), ATI Rage 128 4X SE (AGP?),
+	ATI Rage 128 4X SF (AGP?), ATI Rage 128 4X SG (AGP?),
+	ATI Rage 128 4X SH (AGP?), ATI Rage 128 4X SK (AGP?),
+	ATI Rage 128 4X SL (AGP?), ATI Rage 128 4X SM (AGP),
+	ATI Rage 128 4X SN (AGP?), ATI Rage 128 Pro ULTRA TF (AGP),
+	ATI Rage 128 Pro ULTRA TL (AGP), ATI Rage 128 Pro ULTRA TR (AGP),
+	ATI Rage 128 Pro ULTRA TS (AGP?), ATI Rage 128 Pro ULTRA TT (AGP?),
+	ATI Rage 128 Pro ULTRA TU (AGP?)
+(II) RADEON: Driver for ATI Radeon chipsets: ATI Radeon QD (AGP),
+	ATI Radeon QE (AGP), ATI Radeon QF (AGP), ATI Radeon QG (AGP),
+	ATI Radeon VE/7000 QY (AGP/PCI), ATI Radeon VE/7000 QZ (AGP/PCI),
+	ATI Radeon Mobility M7 LW (AGP),
+	ATI Mobility FireGL 7800 M7 LX (AGP),
+	ATI Radeon Mobility M6 LY (AGP), ATI Radeon Mobility M6 LZ (AGP),
+	ATI Radeon IGP320 (A3) 4136, ATI Radeon IGP320M (U1) 4336,
+	ATI Radeon IGP330/340/350 (A4) 4137,
+	ATI Radeon IGP330M/340M/350M (U2) 4337,
+	ATI Radeon 7000 IGP (A4+) 4237, ATI Radeon Mobility 7000 IGP 4437,
+	ATI FireGL 8700/8800 QH (AGP), ATI Radeon 8500 QL (AGP),
+	ATI Radeon 9100 QM (AGP), ATI Radeon 8500 AIW BB (AGP),
+	ATI Radeon 8500 AIW BC (AGP), ATI Radeon 7500 QW (AGP/PCI),
+	ATI Radeon 7500 QX (AGP/PCI), ATI Radeon 9000/PRO If (AGP/PCI),
+	ATI Radeon 9000 Ig (AGP/PCI), ATI FireGL Mobility 9000 (M9) Ld (AGP),
+	ATI Radeon Mobility 9000 (M9) Lf (AGP),
+	ATI Radeon Mobility 9000 (M9) Lg (AGP),
+	ATI Radeon 9100 IGP (A5) 5834,
+	ATI Radeon Mobility 9100 IGP (U3) 5835,
+	ATI Radeon 9200PRO 5960 (AGP), ATI Radeon 9200 5961 (AGP),
+	ATI Radeon 9200 5962 (AGP), ATI Radeon 9200SE 5964 (AGP),
+	ATI Radeon Mobility 9200 (M9+) 5C61 (AGP),
+	ATI Radeon Mobility 9200 (M9+) 5C63 (AGP), ATI Radeon 9500 AD (AGP),
+	ATI Radeon 9500 AE (AGP), ATI Radeon 9600TX AF (AGP),
+	ATI FireGL Z1 AG (AGP), ATI Radeon 9700 Pro ND (AGP),
+	ATI Radeon 9700/9500Pro NE (AGP), ATI Radeon 9700 NF (AGP),
+	ATI FireGL X1 NG (AGP), ATI Radeon 9600 AP (AGP),
+	ATI Radeon 9600SE AQ (AGP), ATI Radeon 9600XT AR (AGP),
+	ATI Radeon 9600 AS (AGP), ATI FireGL T2 AT (AGP),
+	ATI FireGL RV360 AV (AGP), ATI Radeon Mobility 9600 (M10) NP (AGP),
+	ATI Radeon Mobility 9600 (M10) NQ (AGP),
+	ATI Radeon Mobility 9600 (M11) NR (AGP),
+	ATI Radeon Mobility 9600 (M10) NS (AGP),
+	ATI FireGL Mobility T2 (M10) NT (AGP),
+	ATI FireGL Mobility T2 (M11) NV (AGP), ATI Radeon 9800SE AH (AGP),
+	ATI Radeon 9800 AI (AGP), ATI Radeon 9800 AJ (AGP),
+	ATI FireGL X2 AK (AGP), ATI Radeon 9800PRO NH (AGP),
+	ATI Radeon 9800 NI (AGP), ATI FireGL X2 NK (AGP),
+	ATI Radeon 9800XT NJ (AGP)
+(II) Primary Device is: PCI 01:00:0
+(II) ATI:  Candidate "Device" section "ATI Mach64 AGP".
+(II) ATI:  Shared PCI/AGP Mach64 in slot 1:0:0 detected.
+(II) ATI:  Shared PCI/AGP Mach64 in slot 1:0:0 assigned to active "Device" section "ATI Mach64 AGP".
+(II) resource ranges after xf86ClaimFixedResources() call:
+	[0] -1	0	0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+	[1] -1	0	0x00100000 - 0x107fffff (0x10700000) MX[B]E(B)
+	[2] -1	0	0x000f0000 - 0x000fffff (0x10000) MX[B]
+	[3] -1	0	0x000c0000 - 0x000effff (0x30000) MX[B]
+	[4] -1	0	0x00000000 - 0x0009ffff (0xa0000) MX[B]
+	[5] -1	0	0x10800000 - 0x10801fff (0x2000) MX[B]
+	[6] -1	0	0xf4000000 - 0xf4001fff (0x2000) MX[B]
+	[7] -1	0	0xf4002800 - 0xf400287f (0x80) MX[B]
+	[8] -1	0	0xf4002c00 - 0xf4002cff (0x100) MX[B]
+	[9] -1	0	0xf4002000 - 0xf400207f (0x80) MX[B]
+	[10] -1	0	0xf4002400 - 0xf400247f (0x80) MX[B]
+	[11] -1	0	0xf8000000 - 0xf7ffffff (0x0) MX[B]O
+	[12] -1	0	0xf4100000 - 0xf4100fff (0x1000) MX[B](B)
+	[13] -1	0	0xf5000000 - 0xf5ffffff (0x1000000) MX[B](B)
+	[14] -1	0	0x0000ffff - 0x0000ffff (0x1) IX[B]
+	[15] -1	0	0x00000000 - 0x000000ff (0x100) IX[B]
+	[16] -1	0	0x00001400 - 0x000014ff (0x100) IX[B]
+	[17] -1	0	0x00001000 - 0x000010ff (0x100) IX[B]
+	[18] -1	0	0x00001800 - 0x0000187f (0x80) IX[B]
+	[19] -1	0	0x00001880 - 0x0000189f (0x20) IX[B]
+	[20] -1	0	0x000018a0 - 0x000018af (0x10) IX[B]
+	[21] -1	0	0x00009000 - 0x000090ff (0x100) IX[B](B)
+(II) Loading sub module "atimisc"
+(II) LoadModule: "atimisc"
+(II) Loading /usr/X11R6/lib/modules/drivers/atimisc_drv.o
+(II) Module atimisc: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 6.5.5
+	Module class: XFree86 Video Driver
+	ABI class: XFree86 Video Driver, version 0.6
+(II) resource ranges after probing:
+	[0] -1	0	0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+	[1] -1	0	0x00100000 - 0x107fffff (0x10700000) MX[B]E(B)
+	[2] -1	0	0x000f0000 - 0x000fffff (0x10000) MX[B]
+	[3] -1	0	0x000c0000 - 0x000effff (0x30000) MX[B]
+	[4] -1	0	0x00000000 - 0x0009ffff (0xa0000) MX[B]
+	[5] -1	0	0x10800000 - 0x10801fff (0x2000) MX[B]
+	[6] -1	0	0xf4000000 - 0xf4001fff (0x2000) MX[B]
+	[7] -1	0	0xf4002800 - 0xf400287f (0x80) MX[B]
+	[8] -1	0	0xf4002c00 - 0xf4002cff (0x100) MX[B]
+	[9] -1	0	0xf4002000 - 0xf400207f (0x80) MX[B]
+	[10] -1	0	0xf4002400 - 0xf400247f (0x80) MX[B]
+	[11] -1	0	0xf8000000 - 0xf7ffffff (0x0) MX[B]O
+	[12] -1	0	0xf4100000 - 0xf4100fff (0x1000) MX[B](B)
+	[13] -1	0	0xf5000000 - 0xf5ffffff (0x1000000) MX[B](B)
+	[14] 0	0	0x000a0000 - 0x000affff (0x10000) MS[B]
+	[15] 0	0	0x000b0000 - 0x000b7fff (0x8000) MS[B]
+	[16] 0	0	0x000b8000 - 0x000bffff (0x8000) MS[B]
+	[17] -1	0	0x0000ffff - 0x0000ffff (0x1) IX[B]
+	[18] -1	0	0x00000000 - 0x000000ff (0x100) IX[B]
+	[19] -1	0	0x00001400 - 0x000014ff (0x100) IX[B]
+	[20] -1	0	0x00001000 - 0x000010ff (0x100) IX[B]
+	[21] -1	0	0x00001800 - 0x0000187f (0x80) IX[B]
+	[22] -1	0	0x00001880 - 0x0000189f (0x20) IX[B]
+	[23] -1	0	0x000018a0 - 0x000018af (0x10) IX[B]
+	[24] -1	0	0x00009000 - 0x000090ff (0x100) IX[B](B)
+	[25] 0	0	0x000003b0 - 0x000003bb (0xc) IS[B]
+	[26] 0	0	0x000003c0 - 0x000003df (0x20) IS[B]
+(II) Setting vga for screen 0.
+(==) ATI(0): Chipset:  "ati".
+(**) ATI(0): Depth 24, (--) framebuffer bpp 32
+(II) Loading sub module "int10"
+(II) LoadModule: "int10"
+(II) Reloading /usr/X11R6/lib/modules/linux/libint10.a
+(II) ATI(0): Primary V_BIOS segment is: 0xc000
+(II) Loading sub module "ddc"
+(II) LoadModule: "ddc"
+(II) Reloading /usr/X11R6/lib/modules/libddc.a
+(II) Loading sub module "vbe"
+(II) LoadModule: "vbe"
+(II) Reloading /usr/X11R6/lib/modules/libvbe.a
+(II) ATI(0): VESA BIOS detected
+(II) ATI(0): VESA VBE Version 2.0
+(II) ATI(0): VESA VBE Total Mem: 8128 kB
+(II) ATI(0): VESA VBE OEM: ATI MACH64
+(II) ATI(0): VESA VBE OEM Software Rev: 1.0
+(II) ATI(0): VESA VBE OEM Vendor: ATI Technologies Inc.
+(II) ATI(0): VESA VBE OEM Product: MACH64RM
+(II) ATI(0): VESA VBE OEM Product Rev: 01.00
+(II) ATI(0): VESA VBE DDC supported
+(II) ATI(0): VESA VBE DDC Level none
+(II) ATI(0): VESA VBE DDC transfer in appr. 2 sec.
+(II) ATI(0): VESA VBE DDC read failed
+(II) ATI(0): BIOS Data:  BIOSSize=0xC800, ROMTable=0x010C.
+(II) ATI(0): BIOS Data:  ClockTable=0x0A16, FrequencyTable=0x09F0.
+(II) ATI(0): BIOS Data:  LCDTable=0x0178, LCDPanelInfo=0xBFE8.
+(II) ATI(0): BIOS Data:  VideoTable=0x0000, HardwareTable=0x0156.
+(II) ATI(0): BIOS Data:  I2CType=0x0F, Tuner=0x00, Decoder=0x00, Audio=0x0F.
+(--) ATI(0): ATI 3D Rage Mobility graphics controller detected.
+(--) ATI(0): Chip type 4C4D "LM", version 4, foundry TSMC, class 0, revision 0x01.
+(--) ATI(0): AGP bus interface detected;  block I/O base is 0x9000.
+(--) ATI(0): ATI Mach64 adapter detected.
+(!!) ATI(0): For information on using the multimedia capabilities
+	of this adapter, please see http://gatos.sf.net.
+(--) ATI(0): Internal RAMDAC (subtype 1) detected.
+(==) ATI(0): RGB weight 888
+(==) ATI(0): Default visual is TrueColor
+(==) ATI(0): Using gamma correction (1.0, 1.0, 1.0)
+(II) ATI(0): Using Mach64 accelerator CRTC.
+(--) ATI(0): 1024x768 panel (ID 24) detected.
+(--) ATI(0): Panel model Hitachi TX38D85VC1CAA.
+(--) ATI(0): Panel clock is 65.146 MHz.
+(II) ATI(0): Using digital flat panel interface.
+(II) ATI(0): Storing hardware cursor image at 0xF57FFC00.
+(II) ATI(0): Using 8 MB linear aperture at 0xF5000000.
+(!!) ATI(0): Virtual resolutions will be limited to 8191 kB
+ due to linear aperture size and/or placement of hardware cursor image area.
+(II) ATI(0): Using Block 0 MMIO aperture at 0xF4100400.
+(II) ATI(0): Using Block 1 MMIO aperture at 0xF4100000.
+(==) ATI(0): Write-combining range (0xf5000000,0x800000)
+(II) ATI(0): MMIO write caching enabled.
+(--) ATI(0): 8192 kB of SDRAM (1:1) detected (using 8191 kB).
+(WW) ATI(0): Cannot shadow an accelerated frame buffer.
+(II) ATI(0): Engine XCLK 124.453 MHz;  Refresh rate code 12.
+(--) ATI(0): Internal programmable clock generator detected.
+(--) ATI(0): Reference clock 29.500 MHz.
+(WW) ATI(0): Extraneous XF86Config HorizSync specification(s) ignored.
+(WW) ATI(0): Extraneous XF86Config VertRefresh specification(s) ignored.
+(II) ATI(0): Maximum clock: 230.00 MHz
+(II) ATI(0): Not using default mode "1152x864" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "576x432" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1280x960" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "640x480" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1280x960" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "640x480" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1280x1024" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "640x512" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1280x1024" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "640x512" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1280x1024" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "640x512" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1600x1200" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "800x600" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1600x1200" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "800x600" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1600x1200" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "800x600" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1600x1200" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "800x600" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1600x1200" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "800x600" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1792x1344" (insufficient memory for mode)
+(II) ATI(0): Not using default mode "896x672" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1792x1344" (insufficient memory for mode)
+(II) ATI(0): Not using default mode "896x672" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1856x1392" (insufficient memory for mode)
+(II) ATI(0): Not using default mode "928x696" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1856x1392" (insufficient memory for mode)
+(II) ATI(0): Not using default mode "928x696" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1920x1440" (insufficient memory for mode)
+(II) ATI(0): Not using default mode "960x720" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1920x1440" (insufficient memory for mode)
+(II) ATI(0): Not using default mode "960x720" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1152x768" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1400x1050" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "700x525" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1400x1050" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "700x525" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1600x1024" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "800x512" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "1920x1440" (insufficient memory for mode)
+(II) ATI(0): Not using default mode "960x720" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "2048x1536" (insufficient memory for mode)
+(II) ATI(0): Not using default mode "1024x768" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "2048x1536" (insufficient memory for mode)
+(II) ATI(0): Not using default mode "1024x768" (exceeds panel dimensions)
+(II) ATI(0): Not using default mode "2048x1536" (insufficient memory for mode)
+(II) ATI(0): Not using default mode "1024x768" (exceeds panel dimensions)
+(--) ATI(0): Virtual size is 1024x768 (pitch 1024)
+(**) ATI(0): *Default mode "1024x768": 94.5 MHz, 68.7 kHz, 85.0 Hz
+(II) ATI(0): Modeline "1024x768"   94.50  1024 1072 1168 1376  768 769 772 808 +hsync +vsync
+(**) ATI(0):  Default mode "1024x768": 78.8 MHz, 60.1 kHz, 75.1 Hz
+(II) ATI(0): Modeline "1024x768"   78.80  1024 1040 1136 1312  768 769 772 800 +hsync +vsync
+(**) ATI(0):  Default mode "1024x768": 75.0 MHz, 56.5 kHz, 70.1 Hz
+(II) ATI(0): Modeline "1024x768"   75.00  1024 1048 1184 1328  768 771 777 806 -hsync -vsync
+(**) ATI(0):  Default mode "1024x768": 65.0 MHz, 48.4 kHz, 60.0 Hz
+(II) ATI(0): Modeline "1024x768"   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync
+(**) ATI(0):  Default mode "1024x768": 44.9 MHz, 35.5 kHz, 87.1 Hz (I)
+(II) ATI(0): Modeline "1024x768"   44.90  1024 1032 1208 1264  768 768 776 817 interlace +hsync +vsync
+(**) ATI(0):  Built-in mode "Native panel mode": 65.1 MHz, 62.6 kHz, 81.4 Hz
+(II) ATI(0): Modeline "Native panel mode"   65.15  1024 1024 1032 1040  768 768 769 770
+(**) ATI(0):  Default mode "832x624": 57.3 MHz, 49.7 kHz, 74.6 Hz
+(II) ATI(0): Modeline "832x624"   57.28  832 864 928 1152  624 625 628 667 -hsync -vsync
+(**) ATI(0):  Default mode "800x600": 56.3 MHz, 53.7 kHz, 85.1 Hz
+(II) ATI(0): Modeline "800x600"   56.30  800 832 896 1048  600 601 604 631 +hsync +vsync
+(**) ATI(0):  Default mode "800x600": 49.5 MHz, 46.9 kHz, 75.0 Hz
+(II) ATI(0): Modeline "800x600"   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync
+(**) ATI(0):  Default mode "800x600": 50.0 MHz, 48.1 kHz, 72.2 Hz
+(II) ATI(0): Modeline "800x600"   50.00  800 856 976 1040  600 637 643 666 +hsync +vsync
+(**) ATI(0):  Default mode "800x600": 40.0 MHz, 37.9 kHz, 60.3 Hz
+(II) ATI(0): Modeline "800x600"   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync
+(**) ATI(0):  Default mode "800x600": 36.0 MHz, 35.2 kHz, 56.2 Hz
+(II) ATI(0): Modeline "800x600"   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync
+(**) ATI(0):  Default mode "640x480": 36.0 MHz, 43.3 kHz, 85.0 Hz
+(II) ATI(0): Modeline "640x480"   36.00  640 696 752 832  480 481 484 509 -hsync -vsync
+(**) ATI(0):  Default mode "640x480": 31.5 MHz, 37.5 kHz, 75.0 Hz
+(II) ATI(0): Modeline "640x480"   31.50  640 656 720 840  480 481 484 500 -hsync -vsync
+(**) ATI(0):  Default mode "640x480": 31.5 MHz, 37.9 kHz, 72.8 Hz
+(II) ATI(0): Modeline "640x480"   31.50  640 664 704 832  480 489 491 520 -hsync -vsync
+(**) ATI(0):  Default mode "640x480": 25.2 MHz, 31.5 kHz, 60.0 Hz
+(II) ATI(0): Modeline "640x480"   25.20  640 656 752 800  480 490 492 525 -hsync -vsync
+(**) ATI(0):  Default mode "720x400": 35.5 MHz, 37.9 kHz, 85.0 Hz
+(II) ATI(0): Modeline "720x400"   35.50  720 756 828 936  400 401 404 446 -hsync +vsync
+(**) ATI(0):  Default mode "640x400": 31.5 MHz, 37.9 kHz, 85.1 Hz
+(II) ATI(0): Modeline "640x400"   31.50  640 672 736 832  400 401 404 445 -hsync +vsync
+(**) ATI(0):  Default mode "640x350": 31.5 MHz, 37.9 kHz, 85.1 Hz
+(II) ATI(0): Modeline "640x350"   31.50  640 672 736 832  350 382 385 445 +hsync -vsync
+(**) ATI(0):  Default mode "576x384": 32.5 MHz, 44.2 kHz, 54.8 Hz (D)
+(II) ATI(0): Modeline "576x384"   32.50  576 589 657 736  384 385 388 403 doublescan +hsync +vsync
+(**) ATI(0):  Default mode "512x384": 47.2 MHz, 68.7 kHz, 85.0 Hz (D)
+(II) ATI(0): Modeline "512x384"   47.25  512 536 584 688  384 384 386 404 doublescan +hsync +vsync
+(**) ATI(0):  Default mode "512x384": 39.4 MHz, 60.1 kHz, 75.1 Hz (D)
+(II) ATI(0): Modeline "512x384"   39.40  512 520 568 656  384 384 386 400 doublescan +hsync +vsync
+(**) ATI(0):  Default mode "512x384": 37.5 MHz, 56.5 kHz, 70.1 Hz (D)
+(II) ATI(0): Modeline "512x384"   37.50  512 524 592 664  384 385 388 403 doublescan -hsync -vsync
+(**) ATI(0):  Default mode "512x384": 32.5 MHz, 48.4 kHz, 60.0 Hz (D)
+(II) ATI(0): Modeline "512x384"   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync
+(**) ATI(0):  Default mode "512x384": 22.4 MHz, 35.5 kHz, 87.1 Hz (D)
+(II) ATI(0): Modeline "512x384"   22.45  512 516 604 632  384 384 388 409 interlace doublescan +hsync +vsync
+(**) ATI(0):  Default mode "416x312": 28.6 MHz, 49.7 kHz, 74.7 Hz (D)
+(II) ATI(0): Modeline "416x312"   28.64  416 432 464 576  312 312 314 333 doublescan -hsync -vsync
+(**) ATI(0):  Default mode "400x300": 28.1 MHz, 53.7 kHz, 85.3 Hz (D)
+(II) ATI(0): Modeline "400x300"   28.15  400 416 448 524  300 300 302 315 doublescan +hsync +vsync
+(**) ATI(0):  Default mode "400x300": 24.8 MHz, 46.9 kHz, 75.1 Hz (D)
+(II) ATI(0): Modeline "400x300"   24.75  400 408 448 528  300 300 302 312 doublescan +hsync +vsync
+(**) ATI(0):  Default mode "400x300": 25.0 MHz, 48.1 kHz, 72.2 Hz (D)
+(II) ATI(0): Modeline "400x300"   25.00  400 428 488 520  300 318 321 333 doublescan +hsync +vsync
+(**) ATI(0):  Default mode "400x300": 20.0 MHz, 37.9 kHz, 60.3 Hz (D)
+(II) ATI(0): Modeline "400x300"   20.00  400 420 484 528  300 300 302 314 doublescan +hsync +vsync
+(**) ATI(0):  Default mode "400x300": 18.0 MHz, 35.2 kHz, 56.3 Hz (D)
+(II) ATI(0): Modeline "400x300"   18.00  400 412 448 512  300 300 301 312 doublescan +hsync +vsync
+(**) ATI(0):  Default mode "320x240": 18.0 MHz, 43.3 kHz, 85.2 Hz (D)
+(II) ATI(0): Modeline "320x240"   18.00  320 348 376 416  240 240 242 254 doublescan -hsync -vsync
+(**) ATI(0):  Default mode "320x240": 15.8 MHz, 37.5 kHz, 75.0 Hz (D)
+(II) ATI(0): Modeline "320x240"   15.75  320 328 360 420  240 240 242 250 doublescan -hsync -vsync
+(**) ATI(0):  Default mode "320x240": 15.8 MHz, 37.9 kHz, 72.8 Hz (D)
+(II) ATI(0): Modeline "320x240"   15.75  320 332 352 416  240 244 245 260 doublescan -hsync -vsync
+(**) ATI(0):  Default mode "320x240": 12.6 MHz, 31.5 kHz, 60.1 Hz (D)
+(II) ATI(0): Modeline "320x240"   12.60  320 328 376 400  240 245 246 262 doublescan -hsync -vsync
+(**) ATI(0):  Default mode "360x200": 17.8 MHz, 37.9 kHz, 85.0 Hz (D)
+(II) ATI(0): Modeline "360x200"   17.75  360 378 414 468  200 200 202 223 doublescan -hsync +vsync
+(**) ATI(0):  Default mode "320x200": 15.8 MHz, 37.9 kHz, 85.3 Hz (D)
+(II) ATI(0): Modeline "320x200"   15.75  320 336 368 416  200 200 202 222 doublescan -hsync +vsync
+(**) ATI(0):  Default mode "320x175": 15.8 MHz, 37.9 kHz, 85.3 Hz (D)
+(II) ATI(0): Modeline "320x175"   15.75  320 336 368 416  175 191 192 222 doublescan +hsync -vsync
+(==) ATI(0): DPI set to (75, 75)
+(II) Loading sub module "xaa"
+(II) LoadModule: "xaa"
+(II) Loading /usr/X11R6/lib/modules/libxaa.a
+(II) Module xaa: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.1.0
+	ABI class: XFree86 Video Driver, version 0.6
+(II) Loading sub module "ramdac"
+(II) LoadModule: "ramdac"
+(II) Loading /usr/X11R6/lib/modules/libramdac.a
+(II) Module ramdac: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 0.1.0
+	ABI class: XFree86 Video Driver, version 0.6
+(II) Loading sub module "fb"
+(II) LoadModule: "fb"
+(II) Loading /usr/X11R6/lib/modules/libfb.a
+(II) Module fb: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.0.0
+	ABI class: XFree86 ANSI C Emulation, version 0.2
+(II) Loading sub module "i2c"
+(II) LoadModule: "i2c"
+(II) Loading /usr/X11R6/lib/modules/libi2c.a
+(II) Module i2c: vendor="The XFree86 Project"
+	compiled for 4.3.0.1, module version = 1.2.0
+	ABI class: XFree86 Video Driver, version 0.6
+(II) ATI(0): I2C bus "Mach64" initialized.
+(--) Depth 24 pixmap format is 32 bpp
+(II) do I need RAC?  No, I don't.
+(II) resource ranges after preInit:
+	[0] 0	0	0xf4100000 - 0xf4100fff (0x1000) MS[B]
+	[1] 0	0	0xf5000000 - 0xf5ffffff (0x1000000) MS[B]
+	[2] -1	0	0xffe00000 - 0xffffffff (0x200000) MX[B](B)
+	[3] -1	0	0x00100000 - 0x107fffff (0x10700000) MX[B]E(B)
+	[4] -1	0	0x000f0000 - 0x000fffff (0x10000) MX[B]
+	[5] -1	0	0x000c0000 - 0x000effff (0x30000) MX[B]
+	[6] -1	0	0x00000000 - 0x0009ffff (0xa0000) MX[B]
+	[7] -1	0	0x10800000 - 0x10801fff (0x2000) MX[B]
+	[8] -1	0	0xf4000000 - 0xf4001fff (0x2000) MX[B]
+	[9] -1	0	0xf4002800 - 0xf400287f (0x80) MX[B]
+	[10] -1	0	0xf4002c00 - 0xf4002cff (0x100) MX[B]
+	[11] -1	0	0xf4002000 - 0xf400207f (0x80) MX[B]
+	[12] -1	0	0xf4002400 - 0xf400247f (0x80) MX[B]
+	[13] -1	0	0xf8000000 - 0xf7ffffff (0x0) MX[B]O
+	[14] -1	0	0xf4100000 - 0xf4100fff (0x1000) MX[B](B)
+	[15] -1	0	0xf5000000 - 0xf5ffffff (0x1000000) MX[B](B)
+	[16] 0	0	0x000a0000 - 0x000affff (0x10000) MS[B](OprU)
+	[17] 0	0	0x000b0000 - 0x000b7fff (0x8000) MS[B](OprU)
+	[18] 0	0	0x000b8000 - 0x000bffff (0x8000) MS[B](OprU)
+	[19] 0	0	0x00009000 - 0x000090ff (0x100) IS[B]
+	[20] -1	0	0x0000ffff - 0x0000ffff (0x1) IX[B]
+	[21] -1	0	0x00000000 - 0x000000ff (0x100) IX[B]
+	[22] -1	0	0x00001400 - 0x000014ff (0x100) IX[B]
+	[23] -1	0	0x00001000 - 0x000010ff (0x100) IX[B]
+	[24] -1	0	0x00001800 - 0x0000187f (0x80) IX[B]
+	[25] -1	0	0x00001880 - 0x0000189f (0x20) IX[B]
+	[26] -1	0	0x000018a0 - 0x000018af (0x10) IX[B]
+	[27] -1	0	0x00009000 - 0x000090ff (0x100) IX[B](B)
+	[28] 0	0	0x000003b0 - 0x000003bb (0xc) IS[B](OprU)
+	[29] 0	0	0x000003c0 - 0x000003df (0x20) IS[B](OprU)
+(==) ATI(0): Write-combining range (0xf5000000,0x800000)
+(II) ATI(0): Largest offscreen areas (with overlaps):
+(II) ATI(0): 	1024 x 1279 rectangle at 0,768
+(II) ATI(0): 	768 x 1280 rectangle at 0,768
+(II) ATI(0): Using XFree86 Acceleration Architecture (XAA)
+	Screen to screen bit blits
+	Solid filled rectangles
+	8x8 mono pattern filled rectangles
+	Indirect CPU to Screen color expansion
+	Solid Lines
+	Offscreen Pixmaps
+	Setting up tile and stipple cache:
+		32 128x128 slots
+		10 256x256 slots
+(==) ATI(0): Backing store disabled
+(==) ATI(0): Silken mouse enabled
+(**) Option "dpms"
+(**) ATI(0): DPMS enabled
+(==) RandR enabled
+(II) Initializing built-in extension MIT-SHM
+(II) Initializing built-in extension XInputExtension
+(II) Initializing built-in extension XTEST
+(II) Initializing built-in extension XKEYBOARD
+(II) Initializing built-in extension LBX
+(II) Initializing built-in extension XC-APPGROUP
+(II) Initializing built-in extension SECURITY
+(II) Initializing built-in extension XINERAMA
+(II) Initializing built-in extension XFree86-Bigfont
+(II) Initializing built-in extension RENDER
+(II) Initializing built-in extension RANDR
+(II) Keyboard "Generic Keyboard" handled by legacy driver
+(II) Synaptics touchpad driver version 0.13.3
+(--) Synaptics Mouse auto-dev sets device to /dev/input/event1
+(**) Option "Device" "/dev/input/event1"
+(**) Option "SHMConfig" "on"
+(**) Option "LeftEdge" "1700"
+(**) Option "RightEdge" "5300"
+(**) Option "TopEdge" "1700"
+(**) Option "BottomEdge" "4200"
+(**) Option "FingerLow" "25"
+(**) Option "FingerHigh" "30"
+(**) Option "MaxTapTime" "180"
+(**) Option "MaxTapMove" "220"
+(**) Option "VertScrollDelta" "100"
+(--) Synaptics Mouse synaptics touchpad found
+(**) Option "CorePointer"
+(**) Synaptics Mouse: Core Pointer
+(II) XINPUT: Adding extended input device "Synaptics Mouse" (type: MOUSE)
+Synaptics DeviceInit called
+SynapticsCtrl called.
+Synaptics DeviceOn called
+(--) Synaptics Mouse synaptics touchpad found
+Warning: font renderer for ".pcf" already registered at priority 0
+Warning: font renderer for ".pcf.Z" already registered at priority 0
+Warning: font renderer for ".pcf.gz" already registered at priority 0
+Warning: font renderer for ".snf" already registered at priority 0
+Warning: font renderer for ".snf.Z" already registered at priority 0
+Warning: font renderer for ".snf.gz" already registered at priority 0
+Warning: font renderer for ".bdf" already registered at priority 0
+Warning: font renderer for ".bdf.Z" already registered at priority 0
+Warning: font renderer for ".bdf.gz" already registered at priority 0
+Warning: font renderer for ".pmf" already registered at priority 0
+Could not init font path element unix/:7100, removing from list!
+SynapticsCtrl called.
+SynapticsCtrl called.
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5
+GetModeLine - scrn: 0 clock: 65146
+GetModeLine - hdsp: 1024 hbeg: 1040 hend: 1176 httl: 1344
+              vdsp: 768 vbeg: 769 vend: 775 vttl: 806 flags: 5

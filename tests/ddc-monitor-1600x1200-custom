@@ -1,0 +1,32 @@
+timing: 720x400@70 Hz (VGA 640x400, IBM)
+timing: 720x400@88 Hz (XGA2)
+timing: 640x480@60 Hz (VGA)
+timing: 640x480@67 Hz (Mac II, Apple)
+timing: 640x480@72 Hz (VESA)
+timing: 640x480@75 Hz (VESA)
+timing: 800x600@56 Hz (VESA)
+timing: 800x600@60 Hz (VESA)
+timing: 800x600@72 Hz (VESA)
+timing: 800x600@75 Hz (VESA)
+timing: 832x624@75 Hz (Mac II)
+timing: 1024x768@87 Hz Interlaced (8514A)
+timing: 1024x768@60 Hz (VESA)
+timing: 1024x768@70 Hz (VESA)
+timing: 1024x768@75 Hz (VESA)
+timing: 1280x1024@75 (VESA)
+ctiming: 2288x1430@123
+ctiming: 2288x1430@123
+ctiming: 2288x1430@123
+ctiming: 2288x1430@123
+ctiming: 2288x1430@123
+ctiming: 2288x1430@123
+ctiming: 2288x1430@123
+ctiming: 2288x1430@123
+timing0: 655350000 4095 4095 4095 4095 1023 1023 63 63
+4095x 4095
+timing1: 655350000 4095 4095 4095 4095 1023 1023 63 63
+4095x 4095
+timing2: 655350000 4095 4095 4095 4095 1023 1023 63 63
+4095x 4095
+timing3: 655350000 4095 4095 4095 4095 1023 1023 63 63
+4095x 4095
